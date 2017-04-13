@@ -10,25 +10,39 @@
     url(fonts/kenyan-coffee-bd.ttf);
 }
 
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 .body {
-  min-width: 960px;
+  m in-width: 960px;
   font-size: 14px;
   font-family: "Arial regular", sans-serif;
 }
 
 .head {
-  height: 645px;
+  display: table;
+  min-height: 645px;
+  width: 100%;
+  overflow: hidden;
   background: url(image/devicesandmountins.png) no-repeat 52% 17.3em,
     linear-gradient(rgba(255, 255, 255, 0.1), rgba(120, 110, 142, 0.1)) no-repeat;
 }
   
 .container {
   margin: 0px auto;
-  width: 940px;
+  max-width: 940px;
+  bord er: 1px lime solid;
 }
 
 
@@ -104,9 +118,10 @@
 }
 
 .our-latest-work {
+  display: table;
   width: 100%;
-  height: 820px;
-  background: url(image/background-olw.jpg) no-repeat 50% 50% #3f3b48; 
+  min-height: 820px;
+  background: url(image/background-olw.jpg) no-repeat 49.5% 50% #3f3b48; 
 }
 
 .type {
@@ -251,7 +266,363 @@
   margin-left: 5px;
 }
 
-.how-we-work {
-  background: #fff;
-  height: 746px;
+.paginator  {
+  position: relative;
+  width: 400px; /* 394px*/
+  height: 63px; /* 63px*/  
+  background: url(image/pagination.png) no-repeat 50% 50%;
+  clear: both;
+  margin: 45% 0 0 27.5%;
+  font-family: "Montserrat Bold", sans-serif;
 }
+
+.paginator a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  text-transform: uppercase;
+  top: 36%;
+  left: 4.5%;
+}
+
+.paginator a:last-of-type{
+  left: 67.6%;
+}
+
+.current {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.current span {
+  vertical-align: top;
+  font-size: 12px; 
+  line-height: 55px;
+}
+
+.how-we-work {
+  background: url("image/losers.png") no-repeat 50% bottom #fff;
+  background-size: 100% auto;
+  min-height: 746px;
+}
+
+.type2 {
+  padding-top: 92px;
+  margin: 0px auto;
+  text-transform: uppercase;
+}
+.type2 h2 {
+  font-family: "KenyanCoffeeRg-Bold", sans-serif;
+  font-size: 104px;
+  line-height: 87px;
+  font-weight: bold;
+  vertical-align: text-bottom;
+  text-align: center;
+  color: #ff0000;
+}
+
+.type2 span {
+  font-size: 82px;
+  line-height: 72px; /*72-87*/
+  font-weight: bold;
+  margin: 0 0.09em;
+  color: #3f3b48;
+  vertical-align: top;
+  box-shadow: inset 0 -11px 0 0px #3f3b48;
+}
+
+.shows {
+  
+}
+
+.show {
+  font-size: 0;
+  margin: 6.3% -1.4% 0;
+}
+
+.show-element {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1.4%;
+  width: 30.3%;
+  font-size: 11.91px;
+  line-height: 20px;
+  font-family: "Arial regular", sans-serif;
+}
+
+.show-element .icon-text{
+  font-size: 18px;
+  line-height: 53px;
+  font-family: "Arial regular", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.show-element .fa {
+  font-size: 30px;
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+
+.button { 
+  text-align: center;
+  margin-top: 4%;
+}
+
+.button input {
+  font-family: "Montserrat Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 41px;
+  color: #fff;
+  background: #ff0000;
+  padding: 0 36px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.our-latest-blog-posts {
+  min-height: 869px;
+  height: 1px;
+  background: #3f3b48;
+  
+}
+
+.type {
+  background-position: 12% 43%;
+}
+
+.type span {
+  padding-left: 0.14em;
+}
+
+.sliders {
+  display: flex; 
+  margin: 0 auto;
+  height: 460px;
+  max-width: 1350px;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  font-family: "Montserrat Bold", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sliders-element {  
+  margin: 0 1.89%;
+  height: 445px;
+  min-width: 25.11%;
+  background: #595466;
+  box-shadow: 10px 10px 15px 0px #383440;
+}
+
+.sliders-element-1 {
+  margin-left: -5.7%
+}
+
+.sliders .poster {
+  position: relative;
+  text-align: center;
+  margin: 18px 6.05%;
+  height: 251px;
+  width: 87.91%;
+  background: #3f3b48;
+}
+
+.date {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  height: 80px;
+  width: 24.16%;
+  background: linear-gradient(#fff 55px, #3f3b48 55px);
+  font-size: 32px;
+  line-height: 22px;
+  color: #3f3b48;
+  border-radius: 3px;
+  
+}
+
+.date p{
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.date span {
+  font-size: 11px;
+  color: #fff;
+}
+
+.sliders .indent {  
+  padding-left: 8.26%;
+}
+
+.sliders .by {
+  font-size: 10px;
+  line-height: 26px;
+}
+
+.sliders .event {
+  width: 75%;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.sliders .icon-text{
+  font-size: 10px;
+  line-height: 26pxx;
+  font-family: "Arial regular", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+.sliders .fa {
+  font-family: "FontAwesome";
+  font-size: 18px;
+  line-height: 26px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.runner {
+  position: relative;
+  margin-top: 64px;
+  background: #2f2c36;
+  padding: 4px 0;
+  border-radius: 3px;
+  box-shadow: inset 0 1px #222027,
+    inset 0 2px #2b2831,
+    0 1px 0 0 #534f5b;
+}
+
+.toddler { /*86x24*/
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  transform: translateY(-50%);
+  display: flex;
+  padding: 3px 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)), #fff;
+  border-radius: 1px;
+  box-shadow:0 1px 2px 0 #232028;
+}
+
+.toddler-gradient { /*76x18*/
+  display: inline-block;
+  padding: 9px 38px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2) 36.84%, rgba(255, 255, 255, 0.2) 63.16%, rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
+}
+
+.fun-facts {
+  min-height: 705px;
+  background: #fff;  
+}
+
+.favclient {
+  font-family: "Montserrat Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 53px;
+}
+
+.bg-clients {
+  background: url("image/Group-firm.png") no-repeat 0 278px;
+  }
+
+.circles {
+  margin-top: 20px;
+}
+
+.circletext {
+  font-family: "Montserrat Bold", sans-serif;  
+  font-size: 38px;
+  line-height: 25px;
+}
+
+.circletext430 { 
+  font-family: "Montserrat Bold", sans-serif;  
+  font-size: 26px;
+  line-height: 25px;
+}
+
+.circletext1570 { 
+  font-family: "Montserrat Bold", sans-serif;  
+  font-size: 20.92px;
+  line-height: 15.85px;
+}
+
+.circletext122 { 
+  font-family: "Montserrat Bold", sans-serif;  
+  font-size: 72px;
+  line-height: 42.41px;
+}
+
+.foot {
+  background: #3f3b48;
+}
+
+.foot .container {
+  padding: 25px 0;
+  color: #fff;
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  vertical-align: baseline;
+}
+
+.container p {
+  display: inline;
+  he ight: 35px;
+  li ne-height: 25px;
+  vertical-align: middle;
+}
+
+.copyright {
+  position: relative;
+  fl oat:left;
+}
+
+.copyright::before {
+  content: "\00A9";
+  position: absolute;
+  left: -15px;
+  
+}
+
+.copyright span {
+    text-transform: capitalize;
+}
+
+.social {
+  float: right;       
+  text-transform: capitalize;
+}
+
+.social p,
+.social a {
+  floa t: left;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.social a {  
+  height: 35px;
+  width: 35px;
+  font-size: 15px;
+  color: #fff;  
+  border: 2px solid #fff;
+  border-radius: 50%;  
+  text-align: center;
+}
+
+.social .fa {
+  line-height: 35px;
+}
+
