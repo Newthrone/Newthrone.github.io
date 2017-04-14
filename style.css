@@ -573,23 +573,24 @@
   color: #fff;
   font-family: "Myriad Pro", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 25px;
-  vertical-align: baseline;
+  line-height: 35px;
 }
 
-.container p {
+.foot p {
   display: inline;
-  he ight: 35px;
-  li ne-height: 25px;
   vertical-align: middle;
 }
 
 .copyright {
   position: relative;
-  fl oat:left;
+  float:left;
 }
 
-.copyright::before {
+.copyright p {
+	display: inline-block;
+}
+
+.copyright p::before {
   content: "\00A9";
   position: absolute;
   left: -15px;
@@ -606,10 +607,12 @@
 }
 
 .social p,
-.social a {
-  floa t: left;
-  margin-left: 30px;
+.social a {  
   display: inline-block;
+}
+
+.social p {
+  margin-right: 5px;
 }
 
 .social a {  
@@ -620,6 +623,7 @@
   border: 2px solid #fff;
   border-radius: 50%;  
   text-align: center;
+  margin-left: 10px;
 }
 
 .social .fa {
