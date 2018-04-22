@@ -417,7 +417,7 @@ footer {
   display: block;
   min-height: 189px;
   margin-top: 64px;
-  background: gray url('/MAKET/footer-bg.jpg');
+  background: gray url("/MAKET/footer-bg.jpg");
 }
 
 .address, .social, .creators {
