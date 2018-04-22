@@ -266,7 +266,7 @@ img.logo {
 
 .content,
 .content-2 {
-  background: url(Maket/content-bg-line.png) no-repeat 49.9% 50%, #fff url(maket/content-bg.png);
+  background: url(Maket/content-bg-line.png) no-repeat 49.9% 50%, #fff url(maket/content-bg.png) repeat;
   margin-top: 79px;
 }
 
@@ -417,7 +417,7 @@ footer {
   display: block;
   min-height: 189px;
   margin-top: 64px;
-  background: gray url("MAKET/footer-bg.jpg");
+  background: gray url("MAKET/footer-bg.jpg") repeat;
 }
 
 .address, .social, .creators {
