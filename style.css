@@ -175,27 +175,38 @@ header {
   position: relative;
 }
 
-.menu li:nth-child(n+3){
-  padding-left: 2px;
-}
-
 .menu li:hover,
-menu li:active {
+.menu li:active {
   background-color: #242424;
 }
 
-header a {
+.menu li.active:hover,
+.menu li.active:active {
+  background-color: #000;
+}
+
+
+header a, header span {
   font-family: 'PTSans Narrow', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 72px;
-  padding: 0 20.5px;
+  text-align: center;
+  padding: 28px 20.5px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-header ul.menu li.activ::after {
+header span {
+  cursor: default;
+}
+
+.menu li:nth-child(n+4) a{
+  padding-left: 22.5px;
+}
+
+header ul.menu li.active::after {
   content: "";
   display: block;
   position: absolute;
@@ -308,7 +319,7 @@ img.logo {
   font-size: 14px;
 }
 
-.content .content-left li:nth-child(2) {
+.content .content-left li:nth-child(n+2) {
   display: block;
   margin-top: 24px;
 }
@@ -323,6 +334,11 @@ img.logo {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+  transition: background 0.5s linear;
+}
+
+.btn:hover {
+  background: #663d15;
 }
 
 .content .content-left a.btn {
@@ -347,7 +363,7 @@ img.logo {
   margin-left: -2px;
   padding: 13px 50px 12px 54px;
   font-family: 'PTSans Narrow', sans-serif;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -393,6 +409,11 @@ img.logo {
   font-family: 'PTSans Narrow', sans-serif;
   font-size: 14px;
   box-sizing: border-box;
+}
+
+.form input:focus {
+  border: 2px solid #663d15;
+  outline: none;
 }
 
 .form input:nth-child(odd) {
@@ -454,18 +475,35 @@ footer p, footer a {
   width: 43px;
   height: 43px;
   margin-right: 6px;
+  background: #000 url('Maket/social.png');
 }
 
-.vk {
-  background: #000 url('Maket/vk.jpg') ;
+.social a:hover {
+  background: #fff url('Maket/social.png') 0 100%;
 }
 
-.f {
-  background: #000 url('Maket/f.jpg') ;
+.social .vk {
+  background-position: 0 0;
 }
 
-.inst {
-  background: #000 url('Maket/inst.jpg') ;
+.social .vk:hover {
+  background-position: 0 100%;
+}
+
+.social .f {
+  background-position: 50% 0;
+}
+
+.social .f:hover {
+  background-position: 50% 100%;
+}
+
+.social .inst {
+  background-position: 100% 0;
+}
+
+.social .inst:hover {
+  background-position: 100% 100%;
 }
 
 .creators p {
@@ -476,6 +514,13 @@ footer p, footer a {
   margin-top: 15px;
   padding-top: 9px;
   padding-left: 24px;
+  transition: color 1s linear 0s, 
+              background 1s linear 0.1s;
+}
+
+.creators a:hover {  
+  color: #000;
+  background: #fff;  
 }
 
 
