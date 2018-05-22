@@ -1249,6 +1249,6 @@ body.body-price {
   margin-right: 95px;
 }
 
-.fa {
-  font-size: 13px !important;
+.fa.fa-rub {
+  font-size: 13px;
 }
