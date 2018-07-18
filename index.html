@@ -1,1294 +1,1263 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Celtic</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/media.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Celtic</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
 
 
-<div class="modal" id="menu" role="dialog">
+  <div class="modal" id="menu" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><img src="img/hamburger.png" alt=""></button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#about">О компании</a></li>
-                    <li><a href="#wall-mounted-boilers">Настенные котлы</a></li>
-                    <li><a href="#condensing-boiler">Котлы конденсаторные</a></li>
-                    <li><a href="#service-reviews">Отзывы от сервисменов</a></li>
-                    <li><a href="#articles">Полезные статьи</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#question-answer">Вопрос-ответ</a></li>
-                    <li><a href="#centers">Диллерские центры</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                    <li><a href="#client-reviews">Отзывы клиентов</a></li>
-                </ul>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><img src="img/hamburger.png" alt=""></button>
         </div>
+        <div class="modal-body">
+          <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#wall-mounted-boilers">Настенные котлы</a></li>
+            <li><a href="#condensing-boiler">Котлы конденсаторные</a></li>
+            <li><a href="#service-reviews">Отзывы от сервисменов</a></li>
+            <li><a href="#articles">Полезные статьи</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#question-answer">Вопрос-ответ</a></li>
+            <li><a href="#centers">Диллерские центры</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#client-reviews">Отзывы клиентов</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="modal" id="thanks-for-request" role="dialog">
+  <div class="modal" id="thanks-for-request" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <img src="img/icons/success.png" alt="">
-            </div>
-            <div class="modal-body">
-                <strong>Спасибо за заявку</strong>
-                <p>
-                    Мы перезвоним Вам в течении дня
-                    и поможем выбрать идеальный котел для вашего дома или квартиры
-                </p>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/icons/success.png" alt="">
         </div>
+        <div class="modal-body">
+          <strong>Спасибо за заявку</strong>
+          <p>
+            Мы перезвоним Вам в течении дня и поможем выбрать идеальный котел для вашего дома или квартиры
+          </p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="modal" id="contact-for-consultation" role="dialog">
+  <div class="modal" id="contact-for-consultation" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <strong>Связаться с менеджером для консультации</strong>
-                <form>
-                    <input class="name" name="name" placeholder="Ваше имя" type="text">
-                    <input class="phone" name="phone" placeholder="Ваш телефон" type="text">
-                    <button class="fill_red full-width">Получить консультацию</button>
-                </form>
-            </div>
+      <div class="modal-content">
+        <div class="modal-body">
+          <strong>Связаться с менеджером для консультации</strong>
+          <form>
+            <input class="name" name="name" placeholder="Ваше имя" type="text">
+            <input class="phone" name="phone" placeholder="Ваш телефон" type="text">
+            <button class="fill_red full-width">Получить консультацию</button>
+          </form>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="modal" id="download-tech" role="dialog">
+  <div class="modal" id="download-tech" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <strong>Скачать техническую документацию</strong>
-                <form>
-                    <li>
-                        <input type="checkbox" id="checkbox-vvod" name="checkbox" value="">
-                        <label for="checkbox-vvod">Ввод в эксплуатацию (Первый пуск)</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="checkbox-pressure" name="checkbox" value="" checked>
-                        <label for="checkbox-pressure">Регулировка давления газа</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="checkbox-antifriz" name="checkbox" value="" checked>
-                        <label for="checkbox-antifriz">Информация об антифризах</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="checkbox-rec-ftor" name="checkbox" value="" checked>
-                        <label for="checkbox-rec-ftor">Рекомендации по обслуживанию вторичного теплообменника</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="checkbox-passport" name="checkbox" value="" checked>
-                        <label for="checkbox-passport">Паспорт на котел Celtic-DS Platinum</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="checkbox-instruction" name="checkbox" value="" checked>
-                        <label for="checkbox-instruction">Инструкция на пульт управления DSR-220RH</label>
-                    </li>
+      <div class="modal-content">
+        <div class="modal-body">
+          <strong>Скачать техническую документацию</strong>
+          <form>
+            <li>
+              <input type="checkbox" id="checkbox-vvod" name="checkbox" value="">
+              <label for="checkbox-vvod">Ввод в эксплуатацию (Первый пуск)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="checkbox-pressure" name="checkbox" value="" checked>
+              <label for="checkbox-pressure">Регулировка давления газа</label>
+            </li>
+            <li>
+              <input type="checkbox" id="checkbox-antifriz" name="checkbox" value="" checked>
+              <label for="checkbox-antifriz">Информация об антифризах</label>
+            </li>
+            <li>
+              <input type="checkbox" id="checkbox-rec-ftor" name="checkbox" value="" checked>
+              <label for="checkbox-rec-ftor">Рекомендации по обслуживанию вторичного теплообменника</label>
+            </li>
+            <li>
+              <input type="checkbox" id="checkbox-passport" name="checkbox" value="" checked>
+              <label for="checkbox-passport">Паспорт на котел Celtic-DS Platinum</label>
+            </li>
+            <li>
+              <input type="checkbox" id="checkbox-instruction" name="checkbox" value="" checked>
+              <label for="checkbox-instruction">Инструкция на пульт управления DSR-220RH</label>
+            </li>
 
-                    <button class="fill_red centered">Скачать</button>
-                </form>
-            </div>
+            <button class="fill_red centered">Скачать</button>
+          </form>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="modal" id="article" role="dialog">
+  <div class="modal" id="article" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="title">Котлы для поквартирного отопления</p>
-                <p>
-                    Настенные газовые котлы - это как "мини котельная", т.к. в небольшом корпусе компактно расположены все основные элементы котельной: Горелка, Теплообменник, Блок управления, Циркуляционный насос, Расширительный бак, и конечно, система обеспечивающая безопасную работу котла, манометр, термометр, и многие другие элементы, без которых не обходится работа нормальной котельной.
-                </p>
-                <p>
-                    При том, что в настенных газовых котлах воплотились в жизнь самые передовые технические разработки в области отопления стоимость "настенников" часто в 1,5-2 раза ниже, чем у напольных котлов. Другое существенное преимущество настенных газовых котлов - простота монтажа. Нередко покупатели считают, что удобство монтажа это достоинство, которое должно волновать только монтажников. Это не совсем так, ведь сумма, которую придется заплатить реальному потребителю за установку настенного газового котла или за монтаж котельной, где отдельно устанавливаются котел, бойлер, насосы, расширительный бак и многое другое, отличается очень существенно.
-                    Компактность и возможность вписать настенный газовый котел практически в любой интерьер - еще один плюс этого класса котлов.
-                </p>
-                <p>
-                    По способу удаления отходящих газов все настенные газовые котлы можно разделить на котлы с естественной тягой т.н. "атмосферные" (удаление отходящих газов происходит за счет тяги, создаваемой в дымоходе) и котлы с принудительной тягой т.н. "турбированные" (удаление отходящих газов с помощью встроенного в котел вентилятора).
-                </p>
-                <p>
-                    Большинство фирм, производящих настенные газовые котлы, выпускают модели, как с естественной тягой, так и с принудительной. Котлы с естественной тягой многим хорошо знакомы и дымоход над крышей никого не удивляет. Настенные газовые котлы с принудительной тягой появились позже. Такие модели настенных газовых котлов могут использоваться в помещениях без традиционного дымохода, так как продукты сгорания в этом случае выводятся через специальный коаксиальный дымоход, для которого достаточно сделать только отверстие в наружной стене. Коаксиальный дымоход еще часто называют "труба в трубе". По внутренней трубе такого дымохода продукты сгорания выводятся на улицу с помощью вентилятора, а по внешней поступает воздух. Настенные газовые котлы с принудительным отводом продуктов сгорания не сжигают кислород из помещения, не требуют дополнительного притока холодного воздуха в здание с улицы для поддержания процесса горения, позволяют снизить капиталовложения при установке, т.к. не нужно изготавливать дорогостоящий традиционный дымоход, вместо которого используется короткий и недорогой коаксиальный.
-                </p>
-                <p>
-                    Настенные газовые котлы с принудительной тягой используются и в случае, когда есть традиционный дымоход, но забор воздуха для горения из помещения нежелателен.
-                </p>
-                <p>
-                    По типу розжига, настенные газовые котлы могут быть с электрическим или с пьезорозжигом, но последние, это уже большая редкость.
-                </p>
-                <p>
-                    Настенные газовые котлы с электророзжигом экономичнее, т.к. отсутствует запальник с постоянно горящим пламенем. Благодаря отсутствию постоянно горящего фитилька, использование настенных газовых котлов с электророзжигом позволяет существенно снизить расход газа, что наиболее актуально при использовании сжиженного газа.
-                    Есть и еще один плюс настенных газовых котлов с электророзжигом - при временном прекращении электропитания котел автоматически включится при возобновлении подачи электроэнергии, а модель с пьезорозжигом придется включать вручную.
-                </p>
-                <p>
-                    По виду горелки, настенные газовые котлы могут быть разделены на два типа: с обычной и с модуляционной горелкой. Модуляционная горелка обеспечивает наиболее экономичный режим работы, т.к. котел автоматически регулирует свою мощность в зависимости от потребности в тепле. Кроме того, модуляционная горелка обеспечивает и максимальный комфорт в режиме ГВС, позволяя поддерживать температуру горячей воды на постоянном, заданном уровне.
-                </p>
-                <p>
-                    Большинство настенных газовых котлов оснащено устройствами, обеспечивающими их безопасную эксплуатацию. Так датчик наличия пламени при пропадании пламени отключает подачу газа, блокировочный термостат при аварийном повышении температуры котловой воды отключает котел, специальное устройство отключает котел при пропадании электропитания, другое устройство блокирует котел при отключении газа. Присутствует и устройство отключения котла при снижении объема теплоносителя ниже нормы и датчик контроля тяги.
-                </p>
-                <p>
-                    Диапазон мощностей настенных газовых котлов производимых на сегодняшний день составляет от 11 до 42 кВт, с минимальной рабочей мощностью от 3 до 15 кВт. Площадь большинства квартир составляет от 30 до 150 м2, поэтому в поквартирном отоплении целесообразно устанавливать котлы с номинальной мощность не более 24кВт.
-                    * В основном застройщик сам выбирает и закладывает в проект модели и соответственно производителя котлов и выбор чаще всего останавливается на более бюджетных моделях, что не всегда отвечает желаниям и потребностям будущих собственников квартир.
-                </p>
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="title">Котлы для поквартирного отопления</p>
+          <p>
+            Настенные газовые котлы - это как "мини котельная", т.к. в небольшом корпусе компактно расположены все основные элементы котельной: Горелка, Теплообменник, Блок управления, Циркуляционный насос, Расширительный бак, и конечно, система обеспечивающая безопасную работу котла, манометр, термометр, и многие другие элементы, без которых не обходится работа нормальной котельной.
+          </p>
+          <p>
+            При том, что в настенных газовых котлах воплотились в жизнь самые передовые технические разработки в области отопления стоимость "настенников" часто в 1,5-2 раза ниже, чем у напольных котлов. Другое существенное преимущество настенных газовых котлов - простота монтажа. Нередко покупатели считают, что удобство монтажа это достоинство, которое должно волновать только монтажников. Это не совсем так, ведь сумма, которую придется заплатить реальному потребителю за установку настенного газового котла или за монтаж котельной, где отдельно устанавливаются котел, бойлер, насосы, расширительный бак и многое другое, отличается очень существенно. Компактность и возможность вписать настенный газовый котел практически в любой интерьер - еще один плюс этого класса котлов.
+          </p>
+          <p>
+            По способу удаления отходящих газов все настенные газовые котлы можно разделить на котлы с естественной тягой т.н. "атмосферные" (удаление отходящих газов происходит за счет тяги, создаваемой в дымоходе) и котлы с принудительной тягой т.н. "турбированные" (удаление отходящих газов с помощью встроенного в котел вентилятора).
+          </p>
+          <p>
+            Большинство фирм, производящих настенные газовые котлы, выпускают модели, как с естественной тягой, так и с принудительной. Котлы с естественной тягой многим хорошо знакомы и дымоход над крышей никого не удивляет. Настенные газовые котлы с принудительной тягой появились позже. Такие модели настенных газовых котлов могут использоваться в помещениях без традиционного дымохода, так как продукты сгорания в этом случае выводятся через специальный коаксиальный дымоход, для которого достаточно сделать только отверстие в наружной стене. Коаксиальный дымоход еще часто называют "труба в трубе". По внутренней трубе такого дымохода продукты сгорания выводятся на улицу с помощью вентилятора, а по внешней поступает воздух. Настенные газовые котлы с принудительным отводом продуктов сгорания не сжигают кислород из помещения, не требуют дополнительного притока холодного воздуха в здание с улицы для поддержания процесса горения, позволяют снизить капиталовложения при установке, т.к. не нужно изготавливать дорогостоящий традиционный дымоход, вместо которого используется короткий и недорогой коаксиальный.
+          </p>
+          <p>
+            Настенные газовые котлы с принудительной тягой используются и в случае, когда есть традиционный дымоход, но забор воздуха для горения из помещения нежелателен.
+          </p>
+          <p>
+            По типу розжига, настенные газовые котлы могут быть с электрическим или с пьезорозжигом, но последние, это уже большая редкость.
+          </p>
+          <p>
+            Настенные газовые котлы с электророзжигом экономичнее, т.к. отсутствует запальник с постоянно горящим пламенем. Благодаря отсутствию постоянно горящего фитилька, использование настенных газовых котлов с электророзжигом позволяет существенно снизить расход газа, что наиболее актуально при использовании сжиженного газа. Есть и еще один плюс настенных газовых котлов с электророзжигом - при временном прекращении электропитания котел автоматически включится при возобновлении подачи электроэнергии, а модель с пьезорозжигом придется включать вручную.
+          </p>
+          <p>
+            По виду горелки, настенные газовые котлы могут быть разделены на два типа: с обычной и с модуляционной горелкой. Модуляционная горелка обеспечивает наиболее экономичный режим работы, т.к. котел автоматически регулирует свою мощность в зависимости от потребности в тепле. Кроме того, модуляционная горелка обеспечивает и максимальный комфорт в режиме ГВС, позволяя поддерживать температуру горячей воды на постоянном, заданном уровне.
+          </p>
+          <p>
+            Большинство настенных газовых котлов оснащено устройствами, обеспечивающими их безопасную эксплуатацию. Так датчик наличия пламени при пропадании пламени отключает подачу газа, блокировочный термостат при аварийном повышении температуры котловой воды отключает котел, специальное устройство отключает котел при пропадании электропитания, другое устройство блокирует котел при отключении газа. Присутствует и устройство отключения котла при снижении объема теплоносителя ниже нормы и датчик контроля тяги.
+          </p>
+          <p>
+            Диапазон мощностей настенных газовых котлов производимых на сегодняшний день составляет от 11 до 42 кВт, с минимальной рабочей мощностью от 3 до 15 кВт. Площадь большинства квартир составляет от 30 до 150 м2, поэтому в поквартирном отоплении целесообразно устанавливать котлы с номинальной мощность не более 24кВт. * В основном застройщик сам выбирает и закладывает в проект модели и соответственно производителя котлов и выбор чаще всего останавливается на более бюджетных моделях, что не всегда отвечает желаниям и потребностям будущих собственников квартир.
+          </p>
 
-                <p class="title">Дымоудаление в домах с поквартирным отоплением</p>
+          <p class="title">Дымоудаление в домах с поквартирным отоплением</p>
 
-                <p>
-                    Настенные газовые котлы - это как "мини котельная", т.к. в небольшом корпусе компактно расположены все основные элементы котельной: Горелка, Теплообменник, Блок управления, Циркуляционный насос, Расширительный бак, и конечно, система обеспечивающая безопасную работу котла, манометр, термометр, и многие другие элементы, без которых не обходится работа нормальной котельной.
-                </p>
-                <img src="img/scheme.jpg" class="full-width" alt="">
-            </div>
+          <p>
+            Настенные газовые котлы - это как "мини котельная", т.к. в небольшом корпусе компактно расположены все основные элементы котельной: Горелка, Теплообменник, Блок управления, Циркуляционный насос, Расширительный бак, и конечно, система обеспечивающая безопасную работу котла, манометр, термометр, и многие другие элементы, без которых не обходится работа нормальной котельной.
+          </p>
+          <img src="img/scheme.jpg" class="full-width" alt="">
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="wrapper">
+  <div class="wrapper">
     <div id="sidebar">
-        <img src="img/hamburger.png" id="hamburger-menu" alt="" data-toggle="modal" data-target="#menu">
-        <div id="position-name">
-            Вопрос-Ответ
-        </div>
-        <div id="position-number">
-            ← <strong>01</strong> →
-        </div>
+      <img src="img/hamburger.png" id="hamburger-menu" alt="" data-toggle="modal" data-target="#menu">
+      <div id="position-name">
+        Вопрос-Ответ
+      </div>
+      <div id="position-number">
+        ← <strong>01</strong> →
+      </div>
     </div>
     <div id="content">
-        <section id="main" data-name="Главная" data-number="01">
-                <div class="left-section">
-                    <img src="img/celticds_logo.png" alt="">
-                    <ul>
-                        <li>
-                            <img src="img/icons/clock_point.png" alt="">
-                            <span class="caption">
+      <section id="main" data-name="Главная" data-number="01">
+        <div class="left-section">
+          <img src="img/celticds_logo.png" alt="">
+          <ul>
+            <li>
+              <img src="img/icons/clock_point.png" alt="">
+              <span class="caption">
                                 <strong>Работа в аварийном режиме</strong>
                                 <p>Благодаря компактности внутренней конструкции и компонентов, котел можно поставить в любом удобном месте и сэкономить пространство.</p>
                             </span>
-                        </li>
-                        <li>
-                            <img src="img/icons/sertificate_point.png" alt="">
-                            <span class="caption">
+            </li>
+            <li>
+              <img src="img/icons/sertificate_point.png" alt="">
+              <span class="caption">
                                 <strong>Сертификация по стандартам CEEN</strong>
                                 <p>Благодаря компактности внутренней конструкции и компонентов</p>
                             </span>
-                        </li>
-                        <li>
-                            <img src="img/icons/secure_point.png" alt="">
-                            <span class="caption">
+            </li>
+            <li>
+              <img src="img/icons/secure_point.png" alt="">
+              <span class="caption">
                                 <strong>Длительный срок эксплуатации</strong>
                                 <p>Благодаря компактности внутренней конструкции и компонентов.</p>
                             </span>
-                        </li>
-                        <li>
-                            <img src="img/icons/compact_point.png" alt="">
-                            <span class="caption">
+            </li>
+            <li>
+              <img src="img/icons/compact_point.png" alt="">
+              <span class="caption">
                                 <strong>Компактность</strong>
                                 <p>Благодаря компактности внутренней конструкции и компонентов, котел можно поставить в любом удобном месте и сэкономить пространство.</p>
                             </span>
-                        </li>
-                    </ul>
-                    <div style="clear: both;"></div>
-                </div>
-                <div class="right-section">
-                    <div id="contact-phone">
-                        8 (800) 201-07-07
-                        <p>связаться с менеджером</p>
-                    </div>
+            </li>
+          </ul>
+          <div style="clear: both;"></div>
+        </div>
+        <div class="right-section">
+          <div id="contact-phone">
+            <a href="tel:+78002010707" style="text-decoration: none; color: #fff">8 (800) 201-07-07</a>
 
-                    <div id="send-request">
-                        <h4>ТЕПЛО И УЮТ ВАШЕГО ДОМА</h4>
-                        <p>за счет котлов мирового уровня</p>
-                        <form>
-                            <p>Мы подберем Вам котел для:</p>
-                            <input type="text" class="apartment" placeholder="Квартира">
-                            <input type="text" class="house" placeholder="Дом">
-                            <button data-toggle="modal" data-target="#thanks-for-request">Еще условия подбора</button>
-                        </form>
-                        <div style="clear: both"></div>
-                    </div>
-                </div>
-        </section>
+            <p>связаться с менеджером</p>
+          </div>
 
-        <section id="about" data-name="О компании" data-number="02">
-            <div class="row">
-                <div class="col-md-7">
-                    <h4><strong>ЮЖНОКОРЕЙСКАЯ КОМПАНИЯ DEASUNG CELTIC</strong> является одним из крупнейших производителей бытовой техники для дома.</h4>
-                    <hr class="left">
-                    <p class="col-md-9 no-padding">
-                        Но основным направлением концерна является разработка и производство газового отопительного оборудования.
-                        <br><br>
-                        ГООО «Альянс Групп» является официальным дистрибьютором компании «Celtic-DS», аккредитованной от«DAESUNG CELTIC ENERSYS Со., LTD» в Российской Федерации, и единственной компанией, поставляющей настенные двухконтурные газовые котлы торговой марки «Celtic-DS» мощностью от 15,1 кВт до 40,7 кВт с закрытой камерой сгорания. Использование новейших технологических решений и разработок позволило  вывести на рынок газовые котлы, полностью адаптированные к работе в суровых условиях российской зимы.
-                    </p>
-                    <div class="row achievements">
-                        <div class="col-md-4 no-padding">
-                            <strong>50 000 домов</strong>
-                            <p>оснащено котлами селтик</p>
-                        </div>
-                        <div class="col-md-4 no-padding">
-                            <strong>15 лет</strong>
-                            <p>на рынке</p>
-                        </div>
-                        <div class="col-md-4 no-padding">
-                            <strong>70 000</strong>
-                            <p>довольных клиентов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 sertificates">
-                    <div class="top-best-products">
-                        <img src="img/top_best_product.png" alt="">
-                        <div class="caption">
-                            <strong>Победитель всеросийского конкурса "100 лучших товаров России"</strong>
-                            <p>ПРОИЗВЕДЕНО В КОРЕЕ</p>
-                        </div>
-                    </div>
-                    <img src="img/sertificates.png" alt="">
-                </div>
-            </div>
-        </section>
+          <div id="send-request">
+            <h4>ТЕПЛО И УЮТ ВАШЕГО ДОМА</h4>
+            <p>за счет котлов мирового уровня</p>
+            <form>
+              <p>Мы подберем Вам котел для:</p>
+              <input type="text" class="apartment" placeholder="Квартира">
+              <input type="text" class="house" placeholder="Дом">
+              <button data-toggle="modal" data-target="#thanks-for-request">Еще условия подбора</button>
+            </form>
+            <div style="clear: both"></div>
+          </div>
+        </div>
+      </section>
 
-        <section id="wall-mounted-boilers" data-name="Настенные котлы" data-number="03">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>НАСТЕННЫЕ ГАЗОВЫЕ КОТЛЫ</h4>
-                    <p>ПРОВЕРЕНЫ НА СТАБИЛЬНОСТЬ РАБОТЫ ПРИ НИЗКОЙ ТЕМПЕРАТУРЕ ВОЗДУХА И НИЗКОМ ДАВЛЕНИИ ГАЗА В МАГИСТРАЛИ</p>
-                </div>
-            </div>
+      <section id="about" data-name="О компании" data-number="02">
+        <div class="row">
+          <div class="col-md-7">
+            <h4><strong>ЮЖНОКОРЕЙСКАЯ КОМПАНИЯ DEASUNG CELTIC</strong> является одним из крупнейших производителей бытовой техники для дома.</h4>
             <hr class="left">
-            <div class="boilers-gallery">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-3">
-                            <div class="boilers-slider">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-9">
-                            <nav>
-                                <div class="nav nav-tabs"role="tablist">
-                                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-1" role="tab" aria-selected="true">
+            <p class="col-md-9 no-padding">
+              Но основным направлением концерна является разработка и производство газового отопительного оборудования.
+              <br><br> ГООО «Альянс Групп» является официальным дистрибьютором компании «Celtic-DS», аккредитованной от«DAESUNG CELTIC ENERSYS Со., LTD» в Российской Федерации, и единственной компанией, поставляющей настенные двухконтурные газовые котлы торговой марки «Celtic-DS» мощностью от 15,1 кВт до 40,7 кВт с закрытой камерой сгорания. Использование новейших технологических решений и разработок позволило вывести на рынок газовые котлы, полностью адаптированные к работе в суровых условиях российской зимы.
+            </p>
+            <div class="row achievements">
+              <div class="col-md-4 no-padding">
+                <strong>50 000 домов</strong>
+                <p>оснащено котлами селтик</p>
+              </div>
+              <div class="col-md-4 no-padding">
+                <strong>15 лет</strong>
+                <p>на рынке</p>
+              </div>
+              <div class="col-md-4 no-padding">
+                <strong>70 000</strong>
+                <p>довольных клиентов</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 sertificates">
+            <div class="top-best-products">
+              <img src="img/top_best_product.png" alt="">
+              <div class="caption">
+                <strong>Победитель всеросийского конкурса "100 лучших товаров России"</strong>
+                <p>ПРОИЗВЕДЕНО В КОРЕЕ</p>
+              </div>
+            </div>
+            <img src="img/sertificates.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section id="wall-mounted-boilers" data-name="Настенные котлы" data-number="03">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>НАСТЕННЫЕ ГАЗОВЫЕ КОТЛЫ</h4>
+            <p>ПРОВЕРЕНЫ НА СТАБИЛЬНОСТЬ РАБОТЫ ПРИ НИЗКОЙ ТЕМПЕРАТУРЕ ВОЗДУХА И НИЗКОМ ДАВЛЕНИИ ГАЗА В МАГИСТРАЛИ</p>
+          </div>
+        </div>
+        <hr class="left">
+        <div class="boilers-gallery">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5 col-lg-3">
+                <div class="boilers-slider">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9">
+                <nav>
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-1" role="tab" aria-selected="true">
                                         до 100м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-1" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-1" role="tab" aria-selected="false">
                                         100м³-200м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-1" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-1" role="tab" aria-selected="false">
                                         200м³-350м³
                                     </a>
-                                </div>
-                            </nav>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="nav-gaz-do-100-1" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
-                                    <div class="row overall-description">
-                                        <div class="col-md-4 description-item">
-                                            <div class="triangle">
-                                                <p>100м3-180м3</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="power">
-                                                <p>17-56 кВт</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="fire">
-                                                <p>от 2.03 м3/ч</p>
-                                                <span>потребление газа</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="table-container">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Подходит</td>
-                                                        <td>15,1 кВт</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Производительность</td>
-                                                        <td>до 12 л/мин</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Энергопотребление</td>
-                                                        <td>110 Вт</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>КПД общий</td>
-                                                        <td>92,7 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Тип камеры сгорания</td>
-                                                        <td>закрытый.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Количество контуров</td>
-                                                        <td>двухконтурный</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Тип исполнения</td>
-                                                        <td>настенный</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Диаметр дымохода</td>
-                                                        <td>60/100мм</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Бренд</td>
-                                                        <td>Бренд: Celtic-DS</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Производитель</td>
-                                                        <td>Южная Корея</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="price_and_actions">
-                                            <p class="price">
-                                                от 50 000руб
-                                            </p>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-gaz-do-100-1" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
+                    <div class="row overall-description">
+                      <div class="col-md-4 description-item">
+                        <div class="triangle">
+                          <p>100м3-180м3</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="power">
+                          <p>17-56 кВт</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="fire">
+                          <p>от 2.03 м3/ч</p>
+                          <span>потребление газа</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="table-container">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Подходит</td>
+                              <td>15,1 кВт</td>
+                            </tr>
+                            <tr>
+                              <td>Производительность</td>
+                              <td>до 12 л/мин</td>
+                            </tr>
+                            <tr>
+                              <td>Энергопотребление</td>
+                              <td>110 Вт</td>
+                            </tr>
+                            <tr>
+                              <td>КПД общий</td>
+                              <td>92,7 %</td>
+                            </tr>
+                            <tr>
+                              <td>Тип камеры сгорания</td>
+                              <td>закрытый.</td>
+                            </tr>
+                            <tr>
+                              <td>Количество контуров</td>
+                              <td>двухконтурный</td>
+                            </tr>
+                            <tr>
+                              <td>Тип исполнения</td>
+                              <td>настенный</td>
+                            </tr>
+                            <tr>
+                              <td>Диаметр дымохода</td>
+                              <td>60/100мм</td>
+                            </tr>
+                            <tr>
+                              <td>Бренд</td>
+                              <td>Бренд: Celtic-DS</td>
+                            </tr>
+                            <tr>
+                              <td>Производитель</td>
+                              <td>Южная Корея</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="price_and_actions">
+                        <p class="price">
+                          от 50 000руб
+                        </p>
 
-                                            <span class="in_stock">
+                        <span class="in_stock">
                                                 В наличии
                                             </span>
 
-                                            <ul class="actions">
-                                                <li class="download-tech">
-                                                    <a data-toggle="modal" data-target="#download-tech">Скачать тех документацию котла</a>
-                                                </li>
-                                                <li class="how-to-install">
-                                                    <a data-toggle="modal" data-target="#contact-for-consultation">Как установить котел</a>
-                                                </li>
-                                            </ul>
-                                            <button class="btn_red compact" data-toggle="modal" data-target="#contact-for-consultation">Посмотреть и купить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-100-200-1" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-200-350-1" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="actions">
+                          <li class="download-tech">
+                            <a data-toggle="modal" data-target="#download-tech">Скачать тех документацию котла</a>
+                          </li>
+                          <li class="how-to-install">
+                            <a data-toggle="modal" data-target="#contact-for-consultation">Как установить котел</a>
+                          </li>
+                        </ul>
+                        <button class="btn_red compact" data-toggle="modal" data-target="#contact-for-consultation">Посмотреть и купить</button>
+                      </div>
                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-100-200-1" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-200-350-1" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
+                  </div>
                 </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-3">
-                            <div class="boilers-slider">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-9">
-                            <nav>
-                                <div class="nav nav-tabs"role="tablist">
-                                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-2" role="tab" aria-selected="true">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5 col-lg-3">
+                <div class="boilers-slider">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9">
+                <nav>
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-2" role="tab" aria-selected="true">
                                         до 100м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-2" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-2" role="tab" aria-selected="false">
                                         100м³-200м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-2" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-2" role="tab" aria-selected="false">
                                         200м³-350м³
                                     </a>
-                                </div>
-                            </nav>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="nav-gaz-do-100-2" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
-                                    <div class="row overall-description">
-                                        <div class="col-md-4 description-item">
-                                            <div class="triangle">
-                                                <p>100м3-180м3</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="power">
-                                                <p>17-56 кВт</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="fire">
-                                                <p>от 2.03 м3/ч</p>
-                                                <span>потребление газа</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="table-container">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                <tr>
-                                                    <td>Подходит</td>
-                                                    <td>15,1 кВт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производительность</td>
-                                                    <td>до 12 л/мин</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Энергопотребление</td>
-                                                    <td>110 Вт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>КПД общий</td>
-                                                    <td>92,7 %</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип камеры сгорания</td>
-                                                    <td>закрытый.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Количество контуров</td>
-                                                    <td>двухконтурный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип исполнения</td>
-                                                    <td>настенный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Диаметр дымохода</td>
-                                                    <td>60/100мм</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Бренд</td>
-                                                    <td>Бренд: Celtic-DS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производитель</td>
-                                                    <td>Южная Корея</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="price_and_actions">
-                                            <p class="price">
-                                                от 50 000руб
-                                            </p>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-gaz-do-100-2" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
+                    <div class="row overall-description">
+                      <div class="col-md-4 description-item">
+                        <div class="triangle">
+                          <p>100м3-180м3</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="power">
+                          <p>17-56 кВт</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="fire">
+                          <p>от 2.03 м3/ч</p>
+                          <span>потребление газа</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="table-container">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Подходит</td>
+                              <td>15,1 кВт</td>
+                            </tr>
+                            <tr>
+                              <td>Производительность</td>
+                              <td>до 12 л/мин</td>
+                            </tr>
+                            <tr>
+                              <td>Энергопотребление</td>
+                              <td>110 Вт</td>
+                            </tr>
+                            <tr>
+                              <td>КПД общий</td>
+                              <td>92,7 %</td>
+                            </tr>
+                            <tr>
+                              <td>Тип камеры сгорания</td>
+                              <td>закрытый.</td>
+                            </tr>
+                            <tr>
+                              <td>Количество контуров</td>
+                              <td>двухконтурный</td>
+                            </tr>
+                            <tr>
+                              <td>Тип исполнения</td>
+                              <td>настенный</td>
+                            </tr>
+                            <tr>
+                              <td>Диаметр дымохода</td>
+                              <td>60/100мм</td>
+                            </tr>
+                            <tr>
+                              <td>Бренд</td>
+                              <td>Бренд: Celtic-DS</td>
+                            </tr>
+                            <tr>
+                              <td>Производитель</td>
+                              <td>Южная Корея</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="price_and_actions">
+                        <p class="price">
+                          от 50 000руб
+                        </p>
 
-                                            <span class="in_stock">
+                        <span class="in_stock">
                                                 В наличии
                                             </span>
 
-                                            <ul class="actions">
-                                                <li class="download-tech">
-                                                    <a data-toggle="modal" data-target="#download-tech">Скачать тех документацию котла</a>
-                                                </li>
-                                                <li class="how-to-install">
-                                                    <a data-toggle="modal" data-target="#contact-for-consultation">Как установить котел</a>
-                                                </li>
-                                            </ul>
-                                            <button class="btn_red compact" data-toggle="modal" data-target="#contact-for-consultation">Посмотреть и купить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-100-200-2" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-200-350-2" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="actions">
+                          <li class="download-tech">
+                            <a data-toggle="modal" data-target="#download-tech">Скачать тех документацию котла</a>
+                          </li>
+                          <li class="how-to-install">
+                            <a data-toggle="modal" data-target="#contact-for-consultation">Как установить котел</a>
+                          </li>
+                        </ul>
+                        <button class="btn_red compact" data-toggle="modal" data-target="#contact-for-consultation">Посмотреть и купить</button>
+                      </div>
                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-100-200-2" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-200-350-2" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
+                  </div>
                 </div>
+              </div>
             </div>
-            <p class="additional-equip">ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
-            <div class="equip">
-                <div class="row">
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_1.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_2.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_3.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_4.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_5.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-
-                    <div class="equip-item col-md-3">
-                        <img src="img/equip_3.png" alt="">
-                        <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <p class="additional-equip">ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+        <div class="equip">
+          <div class="row">
+            <div class="equip-item col-md-3">
+              <img src="img/equip_1.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
             </div>
-        </section>
 
-        <section id="condensing-boiler" data-name="Котлы конденсаторные" data-number="04">
+            <div class="equip-item col-md-3">
+              <img src="img/equip_2.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+            </div>
+
+            <div class="equip-item col-md-3">
+              <img src="img/equip_3.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+            </div>
+
+            <div class="equip-item col-md-3">
+              <img src="img/equip_4.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+            </div>
+
+            <div class="equip-item col-md-3">
+              <img src="img/equip_5.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+            </div>
+
+            <div class="equip-item col-md-3">
+              <img src="img/equip_3.png" alt="">
+              <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="condensing-boiler" data-name="Котлы конденсаторные" data-number="04">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>КОТЕЛ КОНДЕНСАЦИОННЫЙ</h4>
+            <p>ПРОВЕРЕНЫ НА СТАБИЛЬНОСТЬ РАБОТЫ ПРИ НИЗКОЙ ТЕМПЕРАТУРЕ НАРУЖНОГО ВОЗДУХА И НИЗКОМ ДАВЛЕНИИ ГАЗА В МАГИСТРАЛИ</p>
+          </div>
+        </div>
+        <hr class="right">
+        <div class="boilers-gallery">
+          <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>КОТЕЛ КОНДЕНСАЦИОННЫЙ</h4>
-                    <p>ПРОВЕРЕНЫ НА СТАБИЛЬНОСТЬ РАБОТЫ ПРИ НИЗКОЙ ТЕМПЕРАТУРЕ НАРУЖНОГО ВОЗДУХА И НИЗКОМ ДАВЛЕНИИ ГАЗА В МАГИСТРАЛИ</p>
-                </div>
-            </div>
-            <hr class="right">
-            <div class="boilers-gallery">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-9">
-                            <nav>
-                                <div class="nav nav-tabs"role="tablist">
-                                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-3" role="tab" aria-selected="true">
+              <div class="col-md-7 col-lg-9">
+                <nav>
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-3" role="tab" aria-selected="true">
                                         до 100м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-3" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-3" role="tab" aria-selected="false">
                                         100м³-200м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-3" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-3" role="tab" aria-selected="false">
                                         200м³-350м³
                                     </a>
-                                </div>
-                            </nav>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="nav-gaz-do-100-3" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
-                                    <div class="row overall-description">
-                                        <div class="col-md-4 description-item">
-                                            <div class="triangle">
-                                                <p>100м3-180м3</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="power">
-                                                <p>17-56 кВт</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="fire">
-                                                <p>от 2.03 м3/ч</p>
-                                                <span>потребление газа</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="table-container">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                <tr>
-                                                    <td>Подходит</td>
-                                                    <td>15,1 кВт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производительность</td>
-                                                    <td>до 12 л/мин</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Энергопотребление</td>
-                                                    <td>110 Вт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>КПД общий</td>
-                                                    <td>92,7 %</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип камеры сгорания</td>
-                                                    <td>закрытый.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Количество контуров</td>
-                                                    <td>двухконтурный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип исполнения</td>
-                                                    <td>настенный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Диаметр дымохода</td>
-                                                    <td>60/100мм</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Бренд</td>
-                                                    <td>Бренд: Celtic-DS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производитель</td>
-                                                    <td>Южная Корея</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="price_and_actions">
-                                            <p class="price">
-                                                от 50 000руб
-                                            </p>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-gaz-do-100-3" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
+                    <div class="row overall-description">
+                      <div class="col-md-4 description-item">
+                        <div class="triangle">
+                          <p>100м3-180м3</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="power">
+                          <p>17-56 кВт</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="fire">
+                          <p>от 2.03 м3/ч</p>
+                          <span>потребление газа</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="table-container">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Подходит</td>
+                              <td>15,1 кВт</td>
+                            </tr>
+                            <tr>
+                              <td>Производительность</td>
+                              <td>до 12 л/мин</td>
+                            </tr>
+                            <tr>
+                              <td>Энергопотребление</td>
+                              <td>110 Вт</td>
+                            </tr>
+                            <tr>
+                              <td>КПД общий</td>
+                              <td>92,7 %</td>
+                            </tr>
+                            <tr>
+                              <td>Тип камеры сгорания</td>
+                              <td>закрытый.</td>
+                            </tr>
+                            <tr>
+                              <td>Количество контуров</td>
+                              <td>двухконтурный</td>
+                            </tr>
+                            <tr>
+                              <td>Тип исполнения</td>
+                              <td>настенный</td>
+                            </tr>
+                            <tr>
+                              <td>Диаметр дымохода</td>
+                              <td>60/100мм</td>
+                            </tr>
+                            <tr>
+                              <td>Бренд</td>
+                              <td>Бренд: Celtic-DS</td>
+                            </tr>
+                            <tr>
+                              <td>Производитель</td>
+                              <td>Южная Корея</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="price_and_actions">
+                        <p class="price">
+                          от 50 000руб
+                        </p>
 
-                                            <span class="in_stock">
+                        <span class="in_stock">
                                                     В наличии
                                                 </span>
 
-                                            <ul class="actions">
-                                                <li class="download-tech">
-                                                    <a>Скачать тех документацию котла</a>
-                                                </li>
-                                                <li class="how-to-install">
-                                                    <a>Как установить котел</a>
-                                                </li>
-                                            </ul>
-                                            <button class="btn_red compact">Посмотреть и купить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-100-200-3" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-200-350-3" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-lg-3">
-                            <div class="boilers-slider">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                            </div>
-                        </div>
+                        <ul class="actions">
+                          <li class="download-tech">
+                            <a>Скачать тех документацию котла</a>
+                          </li>
+                          <li class="how-to-install">
+                            <a>Как установить котел</a>
+                          </li>
+                        </ul>
+                        <button class="btn_red compact">Посмотреть и купить</button>
+                      </div>
                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-100-200-3" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-200-350-3" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
+                  </div>
                 </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-9">
-                            <nav>
-                                <div class="nav nav-tabs"role="tablist">
-                                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-4" role="tab" aria-selected="true">
+              </div>
+              <div class="col-md-5 col-lg-3">
+                <div class="boilers-slider">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7 col-lg-9">
+                <nav>
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-gaz-do-100-4" role="tab" aria-selected="true">
                                         до 100м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-4" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-100-200-4" role="tab" aria-selected="false">
                                         100м³-200м³
                                     </a>
-                                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-4" role="tab" aria-selected="false">
+                    <a class="nav-item nav-link" data-toggle="tab" href="#nav-gaz-200-350-4" role="tab" aria-selected="false">
                                         200м³-350м³
                                     </a>
-                                </div>
-                            </nav>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="nav-gaz-do-100-4" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
-                                    <div class="row overall-description">
-                                        <div class="col-md-4 description-item">
-                                            <div class="triangle">
-                                                <p>100м3-180м3</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="power">
-                                                <p>17-56 кВт</p>
-                                                <span>площадь отопления</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 description-item">
-                                            <div class="fire">
-                                                <p>от 2.03 м3/ч</p>
-                                                <span>потребление газа</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="table-container">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                <tr>
-                                                    <td>Подходит</td>
-                                                    <td>15,1 кВт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производительность</td>
-                                                    <td>до 12 л/мин</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Энергопотребление</td>
-                                                    <td>110 Вт</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>КПД общий</td>
-                                                    <td>92,7 %</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип камеры сгорания</td>
-                                                    <td>закрытый.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Количество контуров</td>
-                                                    <td>двухконтурный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Тип исполнения</td>
-                                                    <td>настенный</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Диаметр дымохода</td>
-                                                    <td>60/100мм</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Бренд</td>
-                                                    <td>Бренд: Celtic-DS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Производитель</td>
-                                                    <td>Южная Корея</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="price_and_actions">
-                                            <p class="price">
-                                                от 50 000руб
-                                            </p>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-gaz-do-100-4" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 15.1 кВт</strong>
+                    <div class="row overall-description">
+                      <div class="col-md-4 description-item">
+                        <div class="triangle">
+                          <p>100м3-180м3</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="power">
+                          <p>17-56 кВт</p>
+                          <span>площадь отопления</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 description-item">
+                        <div class="fire">
+                          <p>от 2.03 м3/ч</p>
+                          <span>потребление газа</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="table-container">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Подходит</td>
+                              <td>15,1 кВт</td>
+                            </tr>
+                            <tr>
+                              <td>Производительность</td>
+                              <td>до 12 л/мин</td>
+                            </tr>
+                            <tr>
+                              <td>Энергопотребление</td>
+                              <td>110 Вт</td>
+                            </tr>
+                            <tr>
+                              <td>КПД общий</td>
+                              <td>92,7 %</td>
+                            </tr>
+                            <tr>
+                              <td>Тип камеры сгорания</td>
+                              <td>закрытый.</td>
+                            </tr>
+                            <tr>
+                              <td>Количество контуров</td>
+                              <td>двухконтурный</td>
+                            </tr>
+                            <tr>
+                              <td>Тип исполнения</td>
+                              <td>настенный</td>
+                            </tr>
+                            <tr>
+                              <td>Диаметр дымохода</td>
+                              <td>60/100мм</td>
+                            </tr>
+                            <tr>
+                              <td>Бренд</td>
+                              <td>Бренд: Celtic-DS</td>
+                            </tr>
+                            <tr>
+                              <td>Производитель</td>
+                              <td>Южная Корея</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="price_and_actions">
+                        <p class="price">
+                          от 50 000руб
+                        </p>
 
-                                            <span class="in_stock">
+                        <span class="in_stock">
                                                     В наличии
                                                 </span>
 
-                                            <ul class="actions">
-                                                <li class="download-tech">
-                                                    <a>Скачать тех документацию котла</a>
-                                                </li>
-                                                <li class="how-to-install">
-                                                    <a>Как установить котел</a>
-                                                </li>
-                                            </ul>
-                                            <button class="btn_red compact">Посмотреть и купить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-100-200-4" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
-                                </div>
-                                <div class="tab-pane fade" id="nav-gaz-200-350-4" role="tabpanel">
-                                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-lg-3">
-                            <div class="boilers-slider">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                                <img src="img/boiler_1.png" alt="">
-                            </div>
-                        </div>
+                        <ul class="actions">
+                          <li class="download-tech">
+                            <a>Скачать тех документацию котла</a>
+                          </li>
+                          <li class="how-to-install">
+                            <a>Как установить котел</a>
+                          </li>
+                        </ul>
+                        <button class="btn_red compact">Посмотреть и купить</button>
+                      </div>
                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-100-200-4" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 17.5 кВт</strong>
+                  </div>
+                  <div class="tab-pane fade" id="nav-gaz-200-350-4" role="tabpanel">
+                    <strong>Котел двухконтурный CELTIC-DS, Platinum 3.13 FFCD, мощность 20.0 кВт</strong>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-5 col-lg-3">
+                <div class="boilers-slider">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                  <img src="img/boiler_1.png" alt="">
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="additional-equip">ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+          <div class="equip">
             <div class="row">
-                <p class="additional-equip">ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
-                <div class="equip">
-                    <div class="row">
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_1.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_1.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
 
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_2.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_2.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
 
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_3.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_3.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
 
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_4.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_4.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
 
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_5.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_5.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
 
-                        <div class="equip-item col-md-3">
-                            <img src="img/equip_3.png" alt="">
-                            <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="equip-item col-md-3">
+                <img src="img/equip_3.png" alt="">
+                <p>Коаксиальное колено 90гр. диам. 60/100 мм оплпрлорплролп</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="service-reviews" data-name="Отзывы от сервисменов" data-number="05">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>ОТЗЫВЫ ОТ СЕРВИСМЕНОВ</h4>
-                    <p>ЭТА СЕРИЯ КОТЛОВ СКОНСТРУИРОВАНА ДЛЯ СИСТЕМ ОТОПЛЕНИЯ И СНАБЖЕНИЯ ГОРЯЧЕЙ ВОДОЙ В КВАРТИРАХ И ЧАСТНЫХ ДОМАХ ОБЩЕЙ ПЛОЩАДЬЮ ОТ 120 ДО 350 КВ. МЕТРОВ.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 col-lg-4 service-center">
-                    <img src="img/serv-centr.jpg" alt="">
-                </div>
-                <div class="col-md-7 col-lg-8 heroes-features">
-                    <strong>Пройдемся по особенностям функций нашего "героя" отзыва</strong>
-                    <ul class="review-list">
-                        <li><span>Удобная и плавная настройка температуры нагревания, при том для каждого из двух контуров.</span></li>
-                        <li><span>Конструктивно имеется возможность авторегулирования мощности отопления.</span></li>
-                        <li><span>Нежный, в буквальном смысле этого слова, электророзжиг и датчик пламени горелки.</span></li>
-                        <li><span>Разумеется режим зима/лето.</span></li>
-                        <li><span>Расширительный бачок встроен в корпус котла, его емкость 5,3 литра.</span></li>
-                        <li><span>При падении давления в системе есть возможность ручной подпитки.</span></li>
-                        <li><span>Имеется адекватный и правильный прибор для измерения и индикации давления в системе.</span></li>
-                        <li><span>Функция предотвращения аварийной блокировки циркуляционного водяного насоса, который тоже встроен в корпус котла.</span></li>
-                        <li><span>Нижнее пороговое значение давления контролируется.</span></li>
-                        <li><span>Имеется специальное устройство, которое не дает котлу перегрется.</span></li>
-                        <li><span>Если неисправен дымоход, имеется защита.</span></li>
-                        <li><span>Вентилятор работает в автоматическом режиме.</span></li>
-                        <li><span>У котла имеется специальная прога, отвечающая за проверку текущего состояния и самодиагностику.</span></li>
-                        <li><span>Если нет природного газа, можно настроить данный котел на работу со сжиженным газом.</span></li>
-                    </ul>
-                </div>
-            </div>
+      <section id="service-reviews" data-name="Отзывы от сервисменов" data-number="05">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>ОТЗЫВЫ ОТ СЕРВИСМЕНОВ</h4>
+            <p>ЭТА СЕРИЯ КОТЛОВ СКОНСТРУИРОВАНА ДЛЯ СИСТЕМ ОТОПЛЕНИЯ И СНАБЖЕНИЯ ГОРЯЧЕЙ ВОДОЙ В КВАРТИРАХ И ЧАСТНЫХ ДОМАХ ОБЩЕЙ ПЛОЩАДЬЮ ОТ 120 ДО 350 КВ. МЕТРОВ.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 col-lg-4 service-center">
+            <img src="img/serv-centr.jpg" alt="">
+          </div>
+          <div class="col-md-7 col-lg-8 heroes-features">
+            <strong>Пройдемся по особенностям функций нашего "героя" отзыва</strong>
+            <ul class="review-list">
+              <li><span>Удобная и плавная настройка температуры нагревания, при том для каждого из двух контуров.</span></li>
+              <li><span>Конструктивно имеется возможность авторегулирования мощности отопления.</span></li>
+              <li><span>Нежный, в буквальном смысле этого слова, электророзжиг и датчик пламени горелки.</span></li>
+              <li><span>Разумеется режим зима/лето.</span></li>
+              <li><span>Расширительный бачок встроен в корпус котла, его емкость 5,3 литра.</span></li>
+              <li><span>При падении давления в системе есть возможность ручной подпитки.</span></li>
+              <li><span>Имеется адекватный и правильный прибор для измерения и индикации давления в системе.</span></li>
+              <li><span>Функция предотвращения аварийной блокировки циркуляционного водяного насоса, который тоже встроен в корпус котла.</span></li>
+              <li><span>Нижнее пороговое значение давления контролируется.</span></li>
+              <li><span>Имеется специальное устройство, которое не дает котлу перегрется.</span></li>
+              <li><span>Если неисправен дымоход, имеется защита.</span></li>
+              <li><span>Вентилятор работает в автоматическом режиме.</span></li>
+              <li><span>У котла имеется специальная прога, отвечающая за проверку текущего состояния и самодиагностику.</span></li>
+              <li><span>Если нет природного газа, можно настроить данный котел на работу со сжиженным газом.</span></li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="review">
-                <div class="col-md-7 col-lg-5"><strong>Вообще, считаю, что настенные котлы от этой фирмы выигрывают большое количество баллов по сравнению с наполными, и вот почему:</strong></div>
-                <ul class="icons-review-list">
-                    <li class="time">
-                        <span>Они более долговечны.</span>
-                        Тут у нас раздельные блоки теплообмена. Один медный, другой из нержавеющей стали. Если первый за нагрев контура отопления, то второй обслуживает горячее водоснабжение. За счет этого обстоятельства теплообменники гораздо меньше засоряются разными отложениями, кроме прочего эффективнее отдают тепло.
-                    </li>
-                    <li class="refregerator">
-                        <span>Принудительная вентиляция с регулировкой мощности.</span>
-                        Эта система напрямую влияет на плавность регулировки скорости вращения, а значит интенсивность наддува воздуха в кмеру сгорания идеальна.
-                    </li>
-                    <li class="pressure">
-                        <span>Возможность работать адекватно в условиях низкого давления в подающих магистралях. </span>
-                        Проблема низкого давления в газовых трубах есть, думаю не только в наших районах. Так вот этот котел работает при давлении газа от 0,03 бар и воды 0,15 бар. Не каждый котел может похвастаться такими минимальными параметрами.
-                    </li>
-                    <li class="energy">
-                        <span>Защита от нестабильного электропитания.</span>
-                        В конструкции котла есть мини-стабилизатор, который поддерживает стабильную работу котла в интервалах 150-286 В. при появлении скачков более 286В в сети необходим дополнительный стабилизатор для подстраховки отдельный стабилизатор напряжения в наличии есть. Двойная защита, хотя можно и не ставить отдельный стабилизатор.
-                    </li>
-                </ul>
-                <button class="btn_red centered" data-toggle="modal" data-target="#contact-for-consultation">Больше преимуществ котлов Селтик</button>
-            </div>
-        </section>
+        <div class="review">
+          <div class="col-md-7 col-lg-5"><strong>Вообще, считаю, что настенные котлы от этой фирмы выигрывают большое количество баллов по сравнению с наполными, и вот почему:</strong></div>
+          <ul class="icons-review-list">
+            <li class="time">
+              <span>Они более долговечны.</span> Тут у нас раздельные блоки теплообмена. Один медный, другой из нержавеющей стали. Если первый за нагрев контура отопления, то второй обслуживает горячее водоснабжение. За счет этого обстоятельства теплообменники гораздо меньше засоряются разными отложениями, кроме прочего эффективнее отдают тепло.
+            </li>
+            <li class="refregerator">
+              <span>Принудительная вентиляция с регулировкой мощности.</span> Эта система напрямую влияет на плавность регулировки скорости вращения, а значит интенсивность наддува воздуха в кмеру сгорания идеальна.
+            </li>
+            <li class="pressure">
+              <span>Возможность работать адекватно в условиях низкого давления в подающих магистралях. </span> Проблема низкого давления в газовых трубах есть, думаю не только в наших районах. Так вот этот котел работает при давлении газа от 0,03 бар и воды 0,15 бар. Не каждый котел может похвастаться такими минимальными параметрами.
+            </li>
+            <li class="energy">
+              <span>Защита от нестабильного электропитания.</span> В конструкции котла есть мини-стабилизатор, который поддерживает стабильную работу котла в интервалах 150-286 В. при появлении скачков более 286В в сети необходим дополнительный стабилизатор для подстраховки отдельный стабилизатор напряжения в наличии есть. Двойная защита, хотя можно и не ставить отдельный стабилизатор.
+            </li>
+          </ul>
+          <button class="btn_red centered" data-toggle="modal" data-target="#contact-for-consultation">Больше преимуществ котлов Селтик</button>
+        </div>
+      </section>
 
-        <section id="articles" data-name="Полезные статьи" data-number="06">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>ПОЛЕЗНЫЕ СТАТЬИ</h4>
-                    <p>ПОДБОР КОТЛА КОТОРЫЙ БУДЕТ ОБОГРЕВАТЬ ВАС, ОБЕСПЕЧИВАТЬ ВАШ ДОМ ГОРЯЧЕЙ ВОДО ОЧЕНЬ ВАЖНОЕ ДЕЛО</p>
-                </div>
-            </div>
-            <div class="row tabs">
-                <div class="col-md-4 col-lg-3">
-                    <nav>
-                        <ul class="articles-list-group">
-                            <li class="list-group-item active">
-                                <a class="nav-link" >
+      <section id="articles" data-name="Полезные статьи" data-number="06">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>ПОЛЕЗНЫЕ СТАТЬИ</h4>
+            <p>ПОДБОР КОТЛА КОТОРЫЙ БУДЕТ ОБОГРЕВАТЬ ВАС, ОБЕСПЕЧИВАТЬ ВАШ ДОМ ГОРЯЧЕЙ ВОДО ОЧЕНЬ ВАЖНОЕ ДЕЛО</p>
+          </div>
+        </div>
+        <div class="row tabs">
+          <div class="col-md-4 col-lg-3">
+            <nav>
+              <ul class="articles-list-group">
+                <li class="list-group-item active">
+                  <a class="nav-link">
                                     Котлы для поквартирного отопления
                                 </a>
-                            </li>
-                            <li  class="list-group-item">
-                                <a  class="nav-link">
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link">
                                     Что представляет собой автономное отопление
                                 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link">
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link">
                                     Виды отопительных котлов и их особенности
                                 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link">
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link">
                                     Современное водяное отопление
                                 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link">
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link">
                                     Как подобрать котёл по площади
                                 </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-5 col-lg-7">
-                    <div class="tab-content">
-                        <div class="tab-pane active">
-                            <p>
-                                Поквартирное отопление (ПО) — автономное индивидуальное обеспечение отдельной квартиры в многоквартирном доме теплом и
-                                горячей водой. Наибольшее распространение ПО с применением настенных двухконтурных газовых котлов получило в многоэтажных
-                                малоквартирных домах (до 9 этажей!). В этом случае в каждой квартире устанавливается настенный газовый двухконтурный котел
-                                с закрытой камерой сгорания, обеспечивающий отопление и горячее водоснабжение (ГВС).
-                            </p>
-                            <p>
-                                Прежде всего, в поквартирном отоплении заинтересованы пользователи, получающие от «поквартирки» комфортное теплоснабжение
-                                с возможностью управлять его режимами по своему усмотрению и оплачивать только реально потребленные ресурсы (газ и воду).
-                                Важно, что вместе с индивидуальным теплогенератором (котлом) владелец квартиры получает доступ к пользованию другими продуктами
-                                и технологиями современного рынка отопительной техники: водяному «теплому полу», многим моделям современных радиаторов и конвекторов,
-                                установка которых невозможна в домах с централизованным теплоснабжением, и т.д. В некоторой степени поквартирное отопление может
-                                рассматривается как сегмент домов (квартир) с повышенной комфортностью.
-                            </p>
-                            <button class="btn_grey" data-toggle="modal" data-target="#article">Читать всю статью</button>
-                        </div>
-                        <div class="tab-pane" >
-                            <p>Что представляет собой автономное отопление</p>
-                        </div>
-                        <div class="tab-pane">
-                            <p>Виды отопительных котлов и их особенности</p>
-                        </div>
-                        <div class="tab-pane">
-                            <p>Современное водяное отопление</p>
-                        </div>
-                        <div class="tab-pane">
-                            <p>Как подобрать котёл по площади</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2 consultation">
-                    <img src="img/wall-boiler.jpg" alt="">
-                    <div class="contact-form">
-                        <p>Вы всегда можете получить бесплатную консультацию</p>
-                        <form>
-                            <input type="text" placeholder="Ваше имя">
-                            <input type="text" placeholder="Ваш телефон">
-                            <button class="btn_red compact" data-toggle="modal" data-target="#thanks-for-request">Получить консультацию</button>
-                        </form>
-                    </div>
-                </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-5 col-lg-7">
+            <div class="tab-content">
+              <div class="tab-pane active">
+                <p>
+                  Поквартирное отопление (ПО) — автономное индивидуальное обеспечение отдельной квартиры в многоквартирном доме теплом и горячей водой. Наибольшее распространение ПО с применением настенных двухконтурных газовых котлов получило в многоэтажных малоквартирных домах (до 9 этажей!). В этом случае в каждой квартире устанавливается настенный газовый двухконтурный котел с закрытой камерой сгорания, обеспечивающий отопление и горячее водоснабжение (ГВС).
+                </p>
+                <p>
+                  Прежде всего, в поквартирном отоплении заинтересованы пользователи, получающие от «поквартирки» комфортное теплоснабжение с возможностью управлять его режимами по своему усмотрению и оплачивать только реально потребленные ресурсы (газ и воду). Важно, что вместе с индивидуальным теплогенератором (котлом) владелец квартиры получает доступ к пользованию другими продуктами и технологиями современного рынка отопительной техники: водяному «теплому полу», многим моделям современных радиаторов и конвекторов, установка которых невозможна в домах с централизованным теплоснабжением, и т.д. В некоторой степени поквартирное отопление может рассматривается как сегмент домов (квартир) с повышенной комфортностью.
+                </p>
+                <button class="btn_grey" data-toggle="modal" data-target="#article">Читать всю статью</button>
+              </div>
+              <div class="tab-pane">
+                <p>Что представляет собой автономное отопление</p>
+              </div>
+              <div class="tab-pane">
+                <p>Виды отопительных котлов и их особенности</p>
+              </div>
+              <div class="tab-pane">
+                <p>Современное водяное отопление</p>
+              </div>
+              <div class="tab-pane">
+                <p>Как подобрать котёл по площади</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-3 col-lg-2 consultation">
+            <img src="img/wall-boiler.jpg" alt="">
+            <div class="contact-form">
+              <p>Вы всегда можете получить бесплатную консультацию</p>
+              <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <button class="btn_red compact" data-toggle="modal" data-target="#thanks-for-request">Получить консультацию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="reviews" data-name="Отзывы" data-number="07">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>ОТЗЫВЫ О КОТЛАХ СЕЛТИК</h4>
-                    <p>ПОСМОТРИТЕ ЧТО ГОВОРЯТ О НАШИХ КОТЛАХ СЧАСТЛИВЫЕ ОБЛАДАТЕЛИ</p>
-                </div>
+      <section id="reviews" data-name="Отзывы" data-number="07">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>ОТЗЫВЫ О КОТЛАХ СЕЛТИК</h4>
+            <p>ПОСМОТРИТЕ ЧТО ГОВОРЯТ О НАШИХ КОТЛАХ СЧАСТЛИВЫЕ ОБЛАДАТЕЛИ</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="reviews-gallery">
+            <div>
+              <img src="img/review_1.jpg" alt="">
+              <p>Отличные котлы</p>
             </div>
-            <div class="row">
-                <div class="reviews-gallery">
-                    <div>
-                        <img src="img/review_1.jpg" alt="">
-                        <p>Отличные котлы</p>
-                    </div>
-                    <div>
-                        <img src="img/review_2.jpg" alt="">
-                        <p>Заказывал недавно котел, все супер, спасибо.</p>
-                    </div>
-                    <div>
-                        <img src="img/review_3.png" alt="">
-                        <p>Недавно купила котел настенный, замечательный продукт</p>
-                    </div>
-                    <div>
-                        <img src="img/review_2.jpg" alt="">
-                        <p>Спасибо, замечательные котлы</p>
-                    </div>
-                </div>
-                <button class="btn_grey centered">Все отзывы</button>
+            <div>
+              <img src="img/review_2.jpg" alt="">
+              <p>Заказывал недавно котел, все супер, спасибо.</p>
+            </div>
+            <div>
+              <img src="img/review_3.png" alt="">
+              <p>Недавно купила котел настенный, замечательный продукт</p>
+            </div>
+            <div>
+              <img src="img/review_2.jpg" alt="">
+              <p>Спасибо, замечательные котлы</p>
+            </div>
+          </div>
+          <button class="btn_grey centered">Все отзывы</button>
 
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="question-answer" data-name="Вопрос-ответ" data-number="08">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>ВОПРОС-ОТВЕТ</h4>
-                    <p>ВСЕ ВОПРОСЫ О РАБОТЕ ГАЗОВЫХ КОТЛОВ CELTIC DS ВЫ МОЖЕТЕ ЗАДАТЬ, ЗАПОЛНИВ ФОРМУ ВНИЗУ СТРАНИЦЫ</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+      <section id="question-answer" data-name="Вопрос-ответ" data-number="08">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>ВОПРОС-ОТВЕТ</h4>
+            <p>ВСЕ ВОПРОСЫ О РАБОТЕ ГАЗОВЫХ КОТЛОВ CELTIC DS ВЫ МОЖЕТЕ ЗАДАТЬ, ЗАПОЛНИВ ФОРМУ ВНИЗУ СТРАНИЦЫ</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
                                         Отключение насоса с минутной задержкой
                                     </button>
-                                    <button class="action btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"></button>
-                                </h5>
-                            </div>
+                    <button class="action btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"></button>
+                  </h5>
+                </div>
 
-                            <div id="collapseOne" class="collapse show" data-parent=".accordion">
-                                <div class="card-body">
-                                    <div class="question">
-                                        <p>
-                                            Здравствуйте! Нам недавно поставили котел Селтик. Он всем хорош, но вот что не устраивает меня:
-                                            когда горелка останавливается, насос еще долго гонит воду, потребляя электроэнергию, и батареи
-                                            быстрее остывают. Нельзя ли отключить насос с минутной задержкой после того как выключается горелка?
-                                            Я бы смог это сделать, я по профессии электронщик, но не знаю к каким последствиям может это привести. Заранее спасибо за ответ!
-                                        </p>
-                                    </div>
-                                    <div class="answer">
-                                        <div class="title">
-                                            Ответ:
-                                        </div>
-                                        <div class="content">
-                                            <p>
-                                                Здравствуйте!
-                                                <br>
-                                                Сценарий алгоритма работы котла «включение-выключение» подразумевает, что после достижения температуры
-                                                установленной на пульте управления насос продолжает работать для точного определения температуры обратной воды.
-                                                И при достижения температуры обратной воды на 12ºС меньше установленной на пульте величины вновь происходит поджиг
-                                                горелки. Быстрее батареи не остывают, они остывают равномернее по всем батареям в каждой комнате вследствии
-                                                перемешивания теплоносителя. Потребление электричества при работе насоса всего 75 Вт+ при горении газа
-                                                добавляется 35Вт вентилятор=110Вт. Отключить насос невозможно — это прописано в программе, но возможно
-                                                изменить дельту включения-выключения котла (сейчас 12ºС) на большую.
-                                                Тогда котел будет включатся реже. Но данный режим чреват при низких температурах.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" >
+                <div id="collapseOne" class="collapse show" data-parent=".accordion">
+                  <div class="card-body">
+                    <div class="question">
+                      <p>
+                        Здравствуйте! Нам недавно поставили котел Селтик. Он всем хорош, но вот что не устраивает меня: когда горелка останавливается, насос еще долго гонит воду, потребляя электроэнергию, и батареи быстрее остывают. Нельзя ли отключить насос с минутной задержкой после того как выключается горелка? Я бы смог это сделать, я по профессии электронщик, но не знаю к каким последствиям может это привести. Заранее спасибо за ответ!
+                      </p>
+                    </div>
+                    <div class="answer">
+                      <div class="title">
+                        Ответ:
+                      </div>
+                      <div class="content">
+                        <p>
+                          Здравствуйте!
+                          <br> Сценарий алгоритма работы котла «включение-выключение» подразумевает, что после достижения температуры установленной на пульте управления насос продолжает работать для точного определения температуры обратной воды. И при достижения температуры обратной воды на 12ºС меньше установленной на пульте величины вновь происходит поджиг горелки. Быстрее батареи не остывают, они остывают равномернее по всем батареям в каждой комнате вследствии перемешивания теплоносителя. Потребление электричества при работе насоса всего 75 Вт+ при горении газа добавляется 35Вт вентилятор=110Вт. Отключить насос невозможно — это прописано в программе, но возможно изменить дельту включения-выключения котла (сейчас 12ºС) на большую. Тогда котел будет включатся реже. Но данный режим чреват при низких температурах.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
                                         Здравствуйте! такая проблема, котел стоит более 2-х лет, все было замечательно, последнее время стали проблемы с ним, стрелка давления заходит на красную и идет сброс воды....
                                     </button>
-                                    <button class="action btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"></button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-parent=".accordion">
-                                <div class="card-body">
-                                    <div class="question">
-                                        <p>
-                                            Здравствуйте! Нам недавно поставили котел Селтик. Он всем хорош, но вот что не устраивает меня:
-                                            когда горелка останавливается, насос еще долго гонит воду, потребляя электроэнергию, и батареи
-                                            быстрее остывают. Нельзя ли отключить насос с минутной задержкой после того как выключается горелка?
-                                            Я бы смог это сделать, я по профессии электронщик, но не знаю к каким последствиям может это привести. Заранее спасибо за ответ!
-                                        </p>
-                                    </div>
-                                    <div class="answer">
-                                        <div class="title">
-                                            Ответ:
-                                        </div>
-                                        <div class="content">
-                                            <p>
-                                                Anim pariatur cliche reprehenderit,
-                                                enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                                nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                                                haven't heard of them accusamus labore sustainable VHS.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="action btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"></button>
+                  </h5>
                 </div>
-                <div class="col-md-3">
-                    <div class="send-question">
-                        <strong>Задать вопрос об особенностях котлов "Celtic"</strong>
-                        <p>Заполните форму и мы ответим на все Ваши вопросы в ближайшее время</p>
-                        <form>
-                            <input class="name" type="text" placeholder="Ваше Имя">
-                            <input class="phone" type="text" placeholder="Ваш телефон">
-                            <textarea placeholder="Ваш вопрос"></textarea>
-                            <button class="fill_red" data-toggle="modal" data-target="#thanks-for-request">Спросить</button>
-                        </form>
+                <div id="collapseTwo" class="collapse" data-parent=".accordion">
+                  <div class="card-body">
+                    <div class="question">
+                      <p>
+                        Здравствуйте! Нам недавно поставили котел Селтик. Он всем хорош, но вот что не устраивает меня: когда горелка останавливается, насос еще долго гонит воду, потребляя электроэнергию, и батареи быстрее остывают. Нельзя ли отключить насос с минутной задержкой после того как выключается горелка? Я бы смог это сделать, я по профессии электронщик, но не знаю к каким последствиям может это привести. Заранее спасибо за ответ!
+                      </p>
                     </div>
-                    <div class="all-questions">
-                        <button>Все вопросы и ответы</button>
+                    <div class="answer">
+                      <div class="title">
+                        Ответ:
+                      </div>
+                      <div class="content">
+                        <p>
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-3">
+            <div class="send-question">
+              <strong>Задать вопрос об особенностях котлов "Celtic"</strong>
+              <p>Заполните форму и мы ответим на все Ваши вопросы в ближайшее время</p>
+              <form>
+                <input class="name" type="text" placeholder="Ваше Имя">
+                <input class="phone" type="text" placeholder="Ваш телефон">
+                <textarea placeholder="Ваш вопрос"></textarea>
+                <button class="fill_red" data-toggle="modal" data-target="#thanks-for-request">Спросить</button>
+              </form>
+            </div>
+            <div class="all-questions">
+              <button>Все вопросы и ответы</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="centers" data-name="Диллерские центра" data-number="09">
+      <section id="centers" data-name="Диллерские центра" data-number="09">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>СЕРВИСНЫЕ И ДИЛЛЕРСКИЙ ЦЕНТРЫ</h4>
+            <p>ПИШИТЕ, ЗВОНИТЕ, ПРИЕЗЖАЙТЕ, ПРИХОДИТЕ К НАС ЗА КОТЛАМИ НАИЛУЧШЕГО КАЧЕСТВА</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 service-center">
+            <p>СЕРВИСНЫЕ ЦЕНТРЫ "CELTIC" НА ТЕРРИТОРИИ РФ</p>
+            <hr class="left_underline">
             <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>СЕРВИСНЫЕ И ДИЛЛЕРСКИЙ ЦЕНТРЫ</h4>
-                    <p>ПИШИТЕ, ЗВОНИТЕ, ПРИЕЗЖАЙТЕ, ПРИХОДИТЕ К НАС ЗА КОТЛАМИ НАИЛУЧШЕГО КАЧЕСТВА</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 service-center">
-                    <p>СЕРВИСНЫЕ ЦЕНТРЫ "CELTIC" НА ТЕРРИТОРИИ РФ</p>
-                    <hr class="left_underline">
-                    <div class="row">
-                        <select>
+              <select>
                             <option value="1">Уфа</option>
                         </select>
 
-                        <select>
+              <select>
                             <option value="1">Уфа</option>
                         </select>
-                    </div>
-                    <div class="row contacts">
-                        <strong>ООО ОптимаГазСервис</strong>
-                        <ul>
-                            <li>
-                                <img src="img/icons/marker.png" alt="">
-                                <a>ул. Революционная, д. 167/1</a>
-                            </li>
-                            <li>
-                                <img src="img/icons/phone-call.png" alt="">
-                                <a >8 (347) 299-77-10 <br> 8 (347) 299-77-10</a>
-                            </li>
-                            <li>
-                                <img src="img/icons/email.png" alt="">
-                                <a >optgas@mail.ru</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 service-center">
-                    <p>СЕРВИСНЫЕ ЦЕНТРЫ "CELTIC" НА ТЕРРИТОРИИ РФ</p>
-                    <hr class="left_underline">
-                    <div class="row">
-                        <select>
+            </div>
+            <div class="row contacts">
+              <strong>ООО ОптимаГазСервис</strong>
+              <ul>
+                <li>
+                  <img src="img/icons/marker.png" alt="">
+                  <a>ул. Революционная, д. 167/1</a>
+                </li>
+                <li>
+                  <img src="img/icons/phone-call.png" alt="">
+                  <a href="tel:+73472997710">8 (347) 299-77-10 </a><br> <a href="tel:+3472997710">8 (347) 299-77-10</a>
+                </li>
+                <li>
+                  <img src="img/icons/email.png" alt="">
+                  <a href="mailto:optgas@mail.ru">optgas@mail.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 service-center">
+            <p>СЕРВИСНЫЕ ЦЕНТРЫ "CELTIC" НА ТЕРРИТОРИИ РФ</p>
+            <hr class="left_underline">
+            <div class="row">
+              <select>
                             <option value="1">Уфа</option>
                         </select>
 
-                        <select>
+              <select>
                             <option value="1">Уфа</option>
                         </select>
-                    </div>
-                    <div class="row contacts">
-                        <div class="col-md-6 no-padding">
-                            <strong>ООО ОптимаГазСервис</strong>
-                            <ul>
-                                <li>
-                                    <img src="img/icons/marker.png" alt="">
-                                    <a>ул. Революционная, д. 167/1</a>
-                                </li>
-                                <li>
-                                    <img src="img/icons/phone-call.png" alt="">
-                                    <a>8 (347) 299-77-10 <br> 8 (347) 299-77-10</a>
-                                </li>
-                                <li>
-                                    <img src="img/icons/email.png" alt="">
-                                    <a>optgas@mail.ru</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 service-map">
-                            <div id="service-center-2-map"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section id="contacts" data-name="Контакты" data-number="10">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>КОНТАКТЫ</h4>
-                    <p>ПИШИТЕ, ЗВОНИТЕ, ПРИЕЗЖАЙТЕ, ПРИХОДИТЕ К НАМ ЗА КОТЛАМИ НАИЛУЧШЕГО КАЧЕСТВА</p>
-                </div>
+            <div class="row contacts">
+              <div class="col-md-6 no-padding">
+                <strong>ООО ОптимаГазСервис</strong>
+                <ul>
+                  <li>
+                    <img src="img/icons/marker.png" alt="">
+                    <a>ул. Революционная, д. 167/1</a>
+                  </li>
+                  <li>
+                    <img src="img/icons/phone-call.png" alt="">
+                    <a href="tel:+73472997710">8 (347) 299-77-10 </a><br> <a href="tel:+3472997710">8 (347) 299-77-10</a>
+                  </li>
+                  <li>
+                    <img src="img/icons/email.png" alt="">
+                    <a href="mailto:optgas@mail.ru">optgas@mail.ru</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 service-map">
+                <div id="service-center-2-map"></div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 contacts-info">
-                    <ul>
-                        <li>
-                            <img src="img/icons/email.png" alt="">
-                            <a>info@kznystem.ru</a>
-                        </li>
-                        <li>
-                            <img src="img/icons/phone-call.png" alt="">
-                            <a>8 (800) 201-07-07 <br> 8 (800)000-00-00</a>
-                        </li>
-                        <li>
-                            <img src="img/icons/marker.png" alt="">
-                            <a>ул. Гвардейскай, 33, Казань, Респ. Татарстан, 420073</a>
-                        </li>
-                        <li>
-                            <img src="img/icons/article.png" alt="">
-                            <a>Скачать реквизиты компании</a>
-                        </li>
-                    </ul>
+          </div>
+        </div>
+      </section>
 
-                    <button class="btn_red" data-toggle="modal" data-target="#contact-for-consultation">Остались вопросы</button>
-                </div>
-                <div class="col-md-9 contacts-map">
-                    <div id="contacts-map"></div>
-                </div>
+      <section id="contacts" data-name="Контакты" data-number="10">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>КОНТАКТЫ</h4>
+            <p>ПИШИТЕ, ЗВОНИТЕ, ПРИЕЗЖАЙТЕ, ПРИХОДИТЕ К НАМ ЗА КОТЛАМИ НАИЛУЧШЕГО КАЧЕСТВА</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 contacts-info">
+            <ul>
+              <li>
+                <img src="img/icons/email.png" alt="">
+                <a href="mailto:info@kznystem.ru">info@kznystem.ru</a>
+              </li>
+              <li>
+                <img src="img/icons/phone-call.png" alt="">
+                <a href="tel:+78002010707">8 (800) 201-07-07</a><br>
+                <a href="tel:+78000000000"> 8 (800)000-00-00</a>
+              </li>
+              <li>
+                <img src="img/icons/marker.png" alt="">
+                <a>ул. Гвардейскай, 33, Казань, Респ. Татарстан, 420073</a>
+              </li>
+              <li>
+                <img src="img/icons/article.png" alt="">
+                <a>Скачать реквизиты компании</a>
+              </li>
+            </ul>
+
+            <button class="btn_red" data-toggle="modal" data-target="#contact-for-consultation">Остались вопросы</button>
+          </div>
+          <div class="col-md-9 contacts-map">
+            <div id="contacts-map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="client-reviews" data-name="Отзывы клиентов" data-number="11">
+        <div class="row">
+          <div class="col-md-7 col-lg-5">
+            <h4>ОТЗЫВЫ О КОТЛАХ СЕЛТИК</h4>
+            <p>ПОСМОТРИТЕ, ЧТО ГОВОРЯТ О НАШИХ КОТЛАХ СЧАСТЛИВЫЕ ОБЛАДАТЕЛИ</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="reviews-gallery">
+            <div>
+              <img src="img/review_1.jpg" alt="">
+
+              <p><strong>Спасибо за котел, всё супер</strong>Спасибо, всё супер</p>
             </div>
-        </section>
-
-        <section id="client-reviews" data-name="Отзывы клиентов" data-number="11">
-            <div class="row">
-                <div class="col-md-7 col-lg-5">
-                    <h4>ОТЗЫВЫ О КОТЛАХ СЕЛТИК</h4>
-                    <p>ПОСМОТРИТЕ, ЧТО ГОВОРЯТ О НАШИХ КОТЛАХ СЧАСТЛИВЫЕ ОБЛАДАТЕЛИ</p>
-                </div>
+            <div>
+              <img src="img/review_2.jpg" alt="">
+              <p>Благодарю за котел, недавно заказывал, всё супер</p>
             </div>
-
-            <div class="row">
-                <div class="reviews-gallery">
-                    <div>
-                        <img src="img/review_1.jpg" alt="">
-
-                        <p><strong>Спасибо за котел, всё супер</strong>Спасибо, всё супер</p>
-                    </div>
-                    <div>
-                        <img src="img/review_2.jpg" alt="">
-                        <p>Благодарю за котел, недавно заказывал, всё супер</p>
-                    </div>
-                    <div>
-                        <img src="img/review_3.png" alt="">
-                        <p>Замечательные котлы, спасибо !</p>
-                    </div>
-                    <div>
-                        <img src="img/review_2.jpg" alt="">
-                        <p>Отличные котлы, всё супер</p>
-                    </div>
-                </div>
+            <div>
+              <img src="img/review_3.png" alt="">
+              <p>Замечательные котлы, спасибо !</p>
             </div>
-            <button class="btn_red centered" data-toggle="modal" data-target="#contact-for-consultation">Все отзывы</button>
-        </section>
+            <div>
+              <img src="img/review_2.jpg" alt="">
+              <p>Отличные котлы, всё супер</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn_red centered" data-toggle="modal" data-target="#contact-for-consultation">Все отзывы</button>
+      </section>
     </div>
-</div>
+  </div>
 
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/script.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDikKYXAyCLoGiKPnx-HNL0oCPuWRc40bk&callback=initMap"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDikKYXAyCLoGiKPnx-HNL0oCPuWRc40bk&callback=initMap"></script>
 </body>
+
 </html>
