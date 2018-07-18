@@ -1,0 +1,413 @@
+@media (min-width: 1200px) {
+    #service-reviews .icons-review-list {
+        width: 47%;
+        margin: 0 20%;
+    }
+    .modal-dialog {
+        max-width: 800px;
+    }
+    .btn_red, .btn_grey {
+        font-size: 26px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    button.fill_red {
+        padding: 5px 15px;
+    }
+    .boilers-gallery .overall-description .description-item {
+        padding-left:10%;
+    }
+}
+@media (max-width: 1500px) {
+    #main .left-section > img {
+        margin-left: 150px;
+    }
+    #main .left-section {
+        width: 59%;
+    }
+    #main .left-section {
+        padding-bottom:10px;
+    }
+    #main .left-section ul li .caption strong {
+        line-height: 16px;
+        font-size: 16px;
+    }
+    #main .left-section ul li .caption {
+        margin-bottom:0;
+    }
+    #main .left-section ul li .caption p {
+        line-height: 14px;
+        font-size: 14px;
+    }
+    #main .left-section ul li img {
+        width: 80px;
+        height: auto;
+    }
+    #main .right-section {
+        padding:20px;
+    }
+    #menu .modal-header img {
+        width: 30px;
+        margin:5px;
+    }
+    #hamburger-menu {
+        margin: 40px;
+        width: 30px;
+    }
+    #contact-phone {
+        font-size: 25px;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-right: 10%;
+        margin-bottom: 10px;
+    }
+    #contact-phone p {
+        font-size: 18px;
+    }
+    #main .left-section {
+        left:0;
+    }
+    #send-request form input {
+        border: 1px solid #212529;
+    }
+    #send-request form {
+        border: 3px solid #928F90;
+    }
+    #send-request h4 {
+        font-size: 30px;
+    }
+    #send-request p {
+        font-size: 20px;
+    }
+    #send-request form {
+        border: 3px solid #eaeaea;
+        padding:20px;
+    }
+    #send-request form p {
+        font-size: 20px;
+    }
+    #send-request form input {
+        border-radius: 26px;
+        border: 1px solid #eaeaea;
+        padding:10px 20px;
+        margin-right: 4%;
+    }
+    #send-request form button {
+        font-size:16px;
+    }
+    #articles .consultation .contact-form p {
+        font-size:14px;
+    }
+    #about {
+        margin-top: 128px;
+    }
+    #about .sertificates {
+        margin-top: -70px;
+    }
+    .equip-item p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #article p.title {
+        font-size: 16px;
+    }
+    #main {
+        background-size: 126% auto;
+        padding-bottom: 40px;
+        background-position: -82px -4px;
+    }
+    #main .left-section {
+        width: 50%;
+        background: url(../img/main_left_boiler.jpg);
+        background-size: 147%;
+        position: absolute;
+        background-position: 47%;
+        left: 110px;
+        padding-right: 20px;
+        padding-bottom:10px;
+        box-shadow: 10px 0 45px rgba(0,0,0,0.5);
+    }
+    #main .left-section ul li .caption strong {
+        line-height: 16px;
+        font-size: 16px;
+        margin-top:15px;
+    }
+	#main .left-section ul li .caption {
+		margin-bottom:0;
+	}
+    #main .left-section ul li .caption p {
+        line-height: 14px;
+        font-size: 14px;
+    }
+    #main .left-section ul li img {
+        width: 80px;
+		height: auto;
+    }
+    #main .left-section > img {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #main .right-section {
+        margin-left: 56%;
+        padding:20px;
+        max-width: 100%;
+    }
+    #menu .modal-header img {
+        width: 30px;
+        margin:5px;
+    }
+    #hamburger-menu {
+        margin: 40px;
+        width: 30px;
+    }
+    #contact-phone {
+        font-size: 25px;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-right: 10%;
+		margin-bottom: 10px;
+    }
+    #contact-phone p {
+        font-size: 18px;
+    }
+    #main .left-section {
+        position: relative;
+        width: 100%;
+        left:0;
+    }
+    #main .right-section {
+        top:0;
+        margin: 0;
+        position: relative;
+        color: #212529;
+    }
+    #send-request p, #send-request h4, #contact-phone, #send-request form p, #send-request form input, #send-request form input::placeholder {
+        color: #212529;
+    }
+    #send-request form input {
+        border: 1px solid #212529;
+    }
+    #send-request form {
+        border: 7px solid #928F90;
+    }
+    #send-request h4 {
+        font-size: 30px;
+    }
+    #send-request p {
+        font-size: 20px;
+    }
+    #send-request form {
+        border: 7px solid #eaeaea;
+        padding:20px;
+    }
+    #send-request form p {
+        font-size: 20px;
+    }
+    #send-request form input {
+        border-radius: 26px;
+        border: 1px solid #eaeaea;
+        padding:10px 20px;
+        width: 48%;
+        margin-right: 4%;
+    }
+    #send-request form button {
+        font-size:16px;
+    }
+
+
+    /*about*/
+    #about {
+        margin-top:110px;
+    }
+    #about h4 strong{
+        font-size: 26px;
+        font-weight: 800;
+    }
+    #about h4{
+        font-size: 18px;
+    }
+    #about .top-best-products .caption {
+        font-size:18px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+    #about .sertificates {
+        margin-top:-90px;
+    }
+    #about .achievements strong {
+        font-size: 22px;
+    }
+    #about .achievements p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+
+    #service-reviews .icons-review-list {
+        width: auto;
+    }
+    .more-equip a {
+        height: 60px;
+        padding-top:15px;
+    }
+    .more-equip a::after {
+        content: "";
+    }
+    .btn_red, .btn_grey {
+        max-width: 100%;
+    }
+    .boilers-gallery .table-container {
+        width: 100%;
+    }
+    .boilers-gallery .table td {
+        padding: 0 10px;
+    }
+    .boilers-gallery .price_and_actions {
+        width: 100%;
+    }
+    .boilers-gallery ul.actions li {
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+    .boilers-gallery .overall-description .description-item > div::before {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        left:10%;
+    }
+    .boilers-gallery .overall-description .description-item {
+        padding-left:16%;
+        margin-bottom: 20px;
+    }
+    .boilers-gallery .overall-description .description-item p {
+        font-size: 14px;
+    }
+    .boilers-gallery ul.actions li.download-tech::before {
+        width: 20px;
+        height:30px;
+        background-size: 20px 30px;
+        top:10px;
+    }
+    .boilers-gallery ul.actions li.how-to-install::before {
+        height: 20px;
+        width: 20px;
+        background-size: 20px 20px;
+        top:10px;
+    }
+    .boilers-gallery .nav-tabs .nav-link {
+        margin:0 1%;
+        width: 31%;
+        font-size: 11px;
+        padding-left:34px;
+    }
+    .boilers-gallery .nav-tabs .nav-link::before {
+        left:17%;
+		top:33%;
+        background-size: 15px 15px;
+        width: 15px;
+        height:15px;
+    }
+    .boilers-gallery .price {
+        font-size: 18px;
+    }
+    .boilers-gallery .in_stock {
+        font-size: 14px;
+    }
+    .boilers-gallery ul.actions li {
+        list-style-type: none;
+        padding-left:30px;
+        position: relative;
+    }
+    .boilers-gallery ul.actions li a {
+        font-size: 13px;
+    }
+    .equip-item p {
+        position: absolute;
+        bottom: 45px;
+        margin: 0 auto;
+        width: 100%;
+        height: 30px;
+        left: 0;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    #about {
+        margin-top: 0;
+    }
+    #about .sertificates {
+        margin-top: 0;
+    }
+    .additional-equip {
+        margin-top: 30px;
+    }
+
+    #service-reviews {
+        background: none;
+    }
+	#service-reviews .review button {
+		font-size: 18px;
+		margin-top:20px;
+	}
+
+    #articles .tab-content {
+        margin-bottom: 30px;
+    }
+
+    #centers .service-center {
+        margin-bottom: 20px;
+    }
+    #service-center-2-map {
+        height: 300px;
+    }
+    #contacts-map {
+        height: 300px;
+    }
+
+    #question-answer .card button.btn-link {
+        font-size: 14px;
+    }
+	#question-answer .card .card-body .answer .title {
+		width: 15%;
+	}
+
+    #centers .service-center .contacts ul {
+        padding-bottom: 40px;
+    }
+    #centers .service-center .contacts ul li img {
+        float: left;
+        width: 40px;
+        max-width: 30%;
+        padding: 10px;
+    }
+    #centers .service-center .contacts ul li a {
+        width: 65%;
+        margin-left: 5%;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+
+    #contacts ul li a {
+        font-size: 14px;
+    }
+	#contacts ul li img {
+		width:40px;
+	}
+	
+	.reviews-gallery .slick-slide strong {
+		font-size:14px;
+	}
+}
