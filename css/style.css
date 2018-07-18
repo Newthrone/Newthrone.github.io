@@ -1,24 +1,24 @@
 @font-face {
   font-family: FuturaPT;
-  url(../fonts/FuturaPT-ExtraBold.ttf);
+  src: url(../fonts/FuturaPT-ExtraBold.ttf);
   font-weight: 900;
 }
 
 @font-face {
   font-family: FuturaPT;
-  url(../fonts/FuturaPT-Heavy.ttf);
+  src: url(../fonts/FuturaPT-Heavy.ttf);
   font-weight: 800;
 }
 
 @font-face {
   font-family: FuturaPT;
-  url(../fonts/FuturaPT-Medium.ttf);
+  src: url(../fonts/FuturaPT-Medium.ttf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: FuturaPT;
-  url(../fonts/FuturaPT-Book.ttf);
+  src: url(../fonts/FuturaPT-Book.ttf);
   font-weight: 300;
 }
 
@@ -121,6 +121,7 @@ body.modal-open .wrapper {
   z-index: 1;
   left: 0;
   height: 100%;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -131,13 +132,10 @@ body.modal-open .wrapper {
 
 #position-name,
 #position-number {
-  -moz-transform: rotate(-90deg);
   /* Для Firefox */
-  -ms-transform: rotate(-90deg);
   /* Для IE */
   -webkit-transform: rotate(-90deg);
   /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-90deg);
   /* Для Opera */
   transform: rotate(-90deg);
 }
@@ -205,6 +203,8 @@ body.modal-open .wrapper {
 
 #menu .modal-body {
   padding-left: 110px;
+  -webkit-box-flex: inherit;
+  -ms-flex: inherit;
   flex: inherit;
 }
 
@@ -252,6 +252,16 @@ body.modal-open .wrapper {
   padding: 5px 14px;
   display: block;
   outline: none;
+}
+
+#contact-for-consultation .send-question input::-webkit-input-placeholder,
+#contact-for-consultation form textarea::-webkit-input-placeholder {
+  color: #8F8F91;
+}
+
+#contact-for-consultation .send-question input:-ms-input-placeholder,
+#contact-for-consultation form textarea:-ms-input-placeholder {
+  color: #8F8F91;
 }
 
 #contact-for-consultation .send-question input::placeholder,
@@ -340,6 +350,7 @@ body.modal-open .wrapper {
 }
 
 #download-tech form input[type=checkbox]:disabled + label:before {
+  -webkit-box-shadow: none;
   box-shadow: none;
   background: #ddd;
 }
@@ -352,6 +363,18 @@ body.modal-open .wrapper {
   background: #C6303E;
   width: 2px;
   height: 2px;
+  -webkit-box-shadow: -2px 0 0 #C6303E,
+  2px 0 0 #C6303E,
+  4px 0 0 #C6303E,
+  4px -2px 0 #C6303E,
+  4px -4px 0 #C6303E,
+  4px -6px 0 #C6303E,
+  4px -8px 0 #C6303E,
+  4px -10px 0 #C6303E,
+  4px -12px 0 #C6303E,
+  4px -14px 0 #C6303E,
+  4px -16px 0 #C6303E,
+  4px -18px 0 #C6303E;
   box-shadow: -2px 0 0 #C6303E,
   2px 0 0 #C6303E,
   4px 0 0 #C6303E,
@@ -364,6 +387,7 @@ body.modal-open .wrapper {
   4px -14px 0 #C6303E,
   4px -16px 0 #C6303E,
   4px -18px 0 #C6303E;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -389,19 +413,18 @@ body.modal-open .wrapper {
 }
 
 #menu .modal-header img {
-  -moz-transform: rotate(90deg);
   /* Для Firefox */
-  -ms-transform: rotate(90deg);
   /* Для IE */
   -webkit-transform: rotate(90deg);
   /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(90deg);
   /* Для Opera */
   transform: rotate(90deg);
   width: 40px;
   margin: 0px;
   -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s, -webkit-transform 2s;
 }
 
 /* Main section */
@@ -423,6 +446,7 @@ body.modal-open .wrapper {
   left: 110px;
   padding-bottom: 280px;
   padding-right: 20px;
+  -webkit-box-shadow: 10px 0 45px rgba(0, 0, 0, 0.5);
   box-shadow: 10px 0 45px rgba(0, 0, 0, 0.5);
 }
 
@@ -528,6 +552,20 @@ body.modal-open .wrapper {
 
 #send-request form input.house {
   margin-right: 0;
+}
+
+#send-request form input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #eaeaea;
+  opacity: 1;
+  /* Firefox */
+}
+
+#send-request form input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #eaeaea;
+  opacity: 1;
+  /* Firefox */
 }
 
 #send-request form input::placeholder {
@@ -837,9 +875,6 @@ body.modal-open .wrapper {
   position: absolute;
   right: 0;
   -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
@@ -860,14 +895,13 @@ body.modal-open .wrapper {
   bottom: 0;
   content: url(../img/arrow_right_white.png);
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .more-equip a:hover {
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
@@ -950,6 +984,14 @@ body.modal-open .wrapper {
   border: 1px solid #D6D1D1;
   padding: 5px 14px;
   outline: none;
+}
+
+#articles .consultation .contact-form input::-webkit-input-placeholder {
+  color: #D6D1D1;
+}
+
+#articles .consultation .contact-form input:-ms-input-placeholder {
+  color: #D6D1D1;
 }
 
 #articles .consultation .contact-form input::placeholder {
@@ -1102,10 +1144,12 @@ body.modal-open .wrapper {
 
 .reviews-gallery div img {
   width: 100%;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  -webkit-transform: scale(0.6);
   transform: scale(0.6);
   margin-top: 0%;
 }
@@ -1114,6 +1158,7 @@ body.modal-open .wrapper {
   -webkit-filter: none;
   /* Safari 6.0 - 9.0 */
   filter: none;
+  -webkit-transform: scale(1.00);
   transform: scale(1.00);
 }
 
@@ -1435,6 +1480,16 @@ button.btn_grey:hover {
   padding: 5px 14px;
   display: block;
   outline: none;
+}
+
+#question-answer .send-question input::-webkit-input-placeholder,
+#question-answer .send-question textarea::-webkit-input-placeholder {
+  color: #8F8F91;
+}
+
+#question-answer .send-question input:-ms-input-placeholder,
+#question-answer .send-question textarea:-ms-input-placeholder {
+  color: #8F8F91;
 }
 
 #question-answer .send-question input::placeholder,
