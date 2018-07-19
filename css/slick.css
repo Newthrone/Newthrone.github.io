@@ -33,11 +33,12 @@
 {
     outline: none;
 }
-.slick-list.dragging
+/*
+.slick-list.draggable
 {
     cursor: pointer;
-/*    cursor: hand !important;*/
 }
+*/
 
 .slick-slider .slick-track,
 .slick-slider .slick-list
@@ -92,7 +93,7 @@
 {
     display: none;
 }
-.slick-slide.dragging img
+.slick-slide.draggable img
 {
     pointer-events: none;
 }
