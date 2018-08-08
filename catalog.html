@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="css/ion.rangeSlider.css" />
-  <link rel="stylesheet" href="/css/ion.rangeSlider.skinNice.css">  
+  <link rel="stylesheet" href="/css/ion.rangeSlider.skinNice.css">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/image/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/image/favicon/apple-icon-60x60.png">
@@ -26,7 +26,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/image/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">  
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -52,17 +52,19 @@
   <section class="wrapper market">
     <section class="sorting-left-side">
       <form action="#echo.ru" method="post">
-        <legend>стоимость</legend>
-        <div class="range"><input type="text" id="range" name="range" value="" /></div>
+        <fieldset>
+          <legend>стоимость</legend>
+          <div class="range"><input type="text" id="range" name="range" value="" /></div>
 
-        <div class="input-text">
-          <span>от</span>
-          <input type="text" id="min1" value="0" onchange="range.value" size=5>
-          <span>до</span>
-          <input type="text" id="max1" value="15000" onchange="changerange()" size=5>
-        </div>
-
-
+          <div class="input-text">
+            <span>от</span>
+            <input type="text" id="min1" value="0" onchange="range.value" size=5>
+            <span>до</span>
+            <input type="text" id="max1" value="15000" onchange="changerange()" size=5>
+          </div>
+        </fieldset>
+        
+<fieldset>
         <legend>сетка:</legend>
 
         <input type="radio" id="adaptive" name="radio" checked>
@@ -71,7 +73,9 @@
         <label class="radio" for="fix">фиксированная</label>
         <input type="radio" id="responsive" name="radio">
         <label class="radio" for="responsive">резиновая</label>
+        </fieldset>
 
+       <fieldset>
         <legend>особенности:</legend>
 
         <input type="checkbox" id="slider" name="checkbox" checked>
@@ -84,6 +88,7 @@
         <label class="checkbox" for="gallery">галерея</label>
         <input type="checkbox" id="basket" name="checkbox">
         <label class="checkbox" for="basket">корзина</label>
+        </fieldset>
 
         <input class="submit" type="submit" value="показать">
       </form>
