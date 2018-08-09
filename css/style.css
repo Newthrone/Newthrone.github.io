@@ -371,9 +371,32 @@
     width: 100%;
   }
   
-    
   body {
-    background: #fff;
     font-family: 'RobotoMedium', sans-serif;
     font-size: 16px;
+    
+  }
+
+.back {
+  width: 100%;
+    height: 100%;
+    border: none;
+    background-image: linear-gradient(163deg, rgba(255, 255, 255, 1) 0, rgba(34, 73, 99, 1) 100%);
+    background-position: 0 0;
+    background-size: auto 100%;
+}
+  
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .flexcontent {
+    margin: 20px 50px;
   }
