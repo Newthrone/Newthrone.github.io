@@ -22,7 +22,5 @@ function sendAjaxForm(result_form, ajax_form, url) {
             $('#result_form').html('Ошибка. Данные не отправленны.');
     	}
  	});
-}
- 
-
+} 
 

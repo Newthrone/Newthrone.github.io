@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form method="post" id="ajax_form" action="" >
+    <form method="post" id="ajax_form" action="../Form_with_ajax/action_ajax_form.php" >
         <input type="text" name="name" placeholder="NAME" /><br>
         <input type="text" name="phonenumber" placeholder="YOUR PHONE" /><br>
         <input type="button" id="btn" value="Отправить" />

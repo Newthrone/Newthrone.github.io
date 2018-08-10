@@ -377,22 +377,11 @@
     
   }
 
-.back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-    height: 100%;
+.back {  
     border: none;
     background-image: linear-gradient(163deg, rgba(255, 255, 255, 1) 0, rgba(34, 73, 99, 1) 100%);
     background-position: 0 0;
-    background-size: auto 100%;
-}
-
-.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    background-size: auto 100vh;
 }
   
   .flex {
@@ -406,6 +395,6 @@
     flex-wrap: wrap;
   }
   
-  .flexcontent {
-    margin: 20px 50px;
+  .flexcontent {    
+    margin: 50px 50px;
   }
