@@ -374,15 +374,14 @@
   body {
     font-family: 'RobotoMedium', sans-serif;
     font-size: 16px;
-    
   }
-
-.back {  
+  
+  .back {
     border: none;
     background-image: linear-gradient(163deg, rgba(255, 255, 255, 1) 0, rgba(34, 73, 99, 1) 100%);
     background-position: 0 0;
-    background-size: auto 100vh;
-}
+    background-size: 100% 100vh;
+  }
   
   .flex {
     display: -webkit-box;
@@ -395,6 +394,40 @@
     flex-wrap: wrap;
   }
   
-  .flexcontent {    
+  .flexcontent {
     margin: 50px 50px;
+    width: 450px;
+    height: 300px;
+  }
+
+.flexcontent img {
+  border-radius: 10px;
+}
+  
+  .noimage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    border: 3px solid #0a7988;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3)
+  }
+  
+  .noimage h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #143f44;
+    text-shadow: 2px 2px 2px #0a5968;
   }
