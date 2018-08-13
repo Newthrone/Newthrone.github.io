@@ -396,8 +396,8 @@
   
   .flexcontent {
     margin: 50px 50px;
-    width: 450px;
-    height: 300px;
+    width: 500px;
+    height: 246px;
   }
 
 .flexcontent img {
@@ -416,8 +416,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 450px;
-    height: 300px;
+    width: 500px;
+    height: 246px;
     margin: 0 auto;
     border: 3px solid #0a7988;
     border-radius: 10px;
